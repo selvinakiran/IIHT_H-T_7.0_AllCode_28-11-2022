@@ -8,6 +8,8 @@ public class ConsumerDemo {
 
 	public static void main(String[] args) {
 		
+		//Consumer always except input and will not expect the output(optional)
+		
 		Consumer<Integer> consumer = (t) -> System.out.println("Printing:" +t); //Single Line statement doesnot require Cury braces
 		consumer.accept(500);
 	
