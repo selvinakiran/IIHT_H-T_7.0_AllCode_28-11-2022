@@ -1,0 +1,18 @@
+package com.basics.functionalInterface;
+
+import java.util.function.Predicate;
+
+public class PredicateDemo implements Predicate<Integer>{
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	@Override
+	public boolean test(Integer t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

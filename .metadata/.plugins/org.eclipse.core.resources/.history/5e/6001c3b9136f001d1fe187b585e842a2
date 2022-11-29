@@ -1,0 +1,22 @@
+package com.basics.functions;
+
+public class BasicFunctions {
+
+	public static void main(String[] args) {
+	
+		System.out.println("Addition:"+Addition(10,10));
+		System.out.println("Subtraction:"+Addition(10,10));
+		System.out.println("Multiply:"+Addition(10,10));
+		System.out.println("Division:"+Addition(10,10));
+		System.out.println("Square:"+Addition(10,10));
+		System.out.println("Cube:"+Addition(10,10));
+
+	}
+	
+	
+	static Integer Addition (Integer num1,Integer num2)
+	{
+		return num1 + num2;
+	}
+
+}
