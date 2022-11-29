@@ -1181,3 +1181,98 @@ Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL:
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 18:34:55.879
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CnvaHoCf => OK
+!SESSION 2022-11-29 21:12:06.425 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=11.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-11-29 21:12:22.480
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-11-29 21:12:22.480
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b86a656,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1117cc7c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:28.975
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:28.980
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7115d5af[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:28.986
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-11-29 21:12:29.085
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\cogjava4571'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:29.373
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.406
+!MESSAGE Boot LS startup time from start to initialized: 3393ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.454
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CJXeEshIisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.465
+!MESSAGE subscribing to classpath changes: sts4.classpath.CJXeEshI isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.469
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.470
+!MESSAGE subsribers = {sts4.classpath.CJXeEshI=Send Classpath Notifications(60)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.472
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.472
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.474
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.474
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.474
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CJXeEshI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.474
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.478
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.478
+!MESSAGE buffering callback sts4.classpath.CJXeEshI Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.485
+!MESSAGE executing callback sts4.classpath.CJXeEshI 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 21:12:32.545
+!MESSAGE executing callback sts4.classpath.CJXeEshI SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-11-29 21:13:00.644
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
