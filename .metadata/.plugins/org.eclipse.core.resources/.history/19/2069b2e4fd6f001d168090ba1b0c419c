@@ -10,7 +10,6 @@ public class BasicFunctions {
 		System.out.println("Division:"+Division(10,10));
 		System.out.println("Square:"+Square(10,10));
 		System.out.println("Cube:"+cube(10,10,10));
-		System.out.println("The git is working fine");
 
 	}
 	
