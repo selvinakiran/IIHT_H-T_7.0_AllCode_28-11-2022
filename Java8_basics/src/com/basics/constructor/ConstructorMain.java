@@ -1,0 +1,15 @@
+package com.basics.constructor;
+
+public class ConstructorMain {
+
+	public static void main(String[] args) {
+		System.out.println(" Created Contructor Interface");
+		
+		IStudent istudent = () -> new Student();
+		
+		Student student = istudent.getStudent();
+		student.display("Selvina","V-Std");
+
+	}
+
+}
