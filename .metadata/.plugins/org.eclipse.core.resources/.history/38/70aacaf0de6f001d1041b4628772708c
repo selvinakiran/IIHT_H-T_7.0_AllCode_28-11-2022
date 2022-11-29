@@ -1,0 +1,18 @@
+package com.basics.dateandtime;
+
+import java.text.*;
+import java.time.LocalDate;
+public class DateTime {
+
+	public static void main(String[] args) {
+		//Date today = new Date();
+		
+		LocalDate today = LocalDate.now();
+		
+		System.out.println(today);
+		
+		
+
+	}
+
+}

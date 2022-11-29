@@ -874,3 +874,310 @@ Caused by: java.net.SocketException: Connection reset
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 14:22:13.790
 !MESSAGE executing callback sts4.classpath.AzenRFlr SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:10.009
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.AzenRFlr
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:10.010
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.AzenRFlr
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:10.010
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:10.010
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.AzenRFlr => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:41.509
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:41.509
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@305230ea[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:41.510
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.324
+!MESSAGE Boot LS startup time from start to initialized: 1814ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.358
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.sKwQBUTWisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.359
+!MESSAGE subscribing to classpath changes: sts4.classpath.sKwQBUTW isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.359
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.360
+!MESSAGE subsribers = {sts4.classpath.sKwQBUTW=Send Classpath Notifications(1724)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.360
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.360
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.361
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.361
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.361
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.sKwQBUTW => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.361
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.362
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.362
+!MESSAGE buffering callback sts4.classpath.sKwQBUTW Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.362
+!MESSAGE executing callback sts4.classpath.sKwQBUTW 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:43.395
+!MESSAGE executing callback sts4.classpath.sKwQBUTW SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:50.474
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.sKwQBUTW
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:50.474
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.sKwQBUTW
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:50.475
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:05:50.475
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.sKwQBUTW => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:11.805
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:11.805
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@305230ea[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:11.806
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.615
+!MESSAGE Boot LS startup time from start to initialized: 1809ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.645
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vcAOFGehisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.646
+!MESSAGE subscribing to classpath changes: sts4.classpath.vcAOFGeh isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.646
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.647
+!MESSAGE subsribers = {sts4.classpath.vcAOFGeh=Send Classpath Notifications(1737)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.647
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.647
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.648
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.648
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.648
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vcAOFGeh => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.649
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.649
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.649
+!MESSAGE buffering callback sts4.classpath.vcAOFGeh Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.650
+!MESSAGE executing callback sts4.classpath.vcAOFGeh 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 16:06:13.685
+!MESSAGE executing callback sts4.classpath.vcAOFGeh SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:00.748
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.vcAOFGeh
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:00.749
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.vcAOFGeh
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:00.749
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:00.750
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.vcAOFGeh => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:17.668
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:17.669
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@305230ea[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:17.669
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.398
+!MESSAGE Boot LS startup time from start to initialized: 1728ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.428
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CnvaHoCfisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.428
+!MESSAGE subscribing to classpath changes: sts4.classpath.CnvaHoCf isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.429
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.429
+!MESSAGE subsribers = {sts4.classpath.CnvaHoCf=Send Classpath Notifications(2654)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.429
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.430
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.430
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.430
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.430
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CnvaHoCf => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.431
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.431
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.431
+!MESSAGE buffering callback sts4.classpath.CnvaHoCf Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.432
+!MESSAGE executing callback sts4.classpath.CnvaHoCf 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 17:01:19.463
+!MESSAGE executing callback sts4.classpath.CnvaHoCf SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2022-11-29 17:30:09.855
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava%2fapplet%2fpackage-summary.html
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:940)
+	at org.eclipse.jdt.internal.core.PackageFragment.getAttachedJavadoc(PackageFragment.java:587)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:2149)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:532)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:93)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:78)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:63)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:590)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava%2fapplet%2fpackage-summary.html
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:885)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava%2fapplet%2fpackage-summary.html
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1924)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:871)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava%2fapplet%2fpackage-summary.html
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:885)
+	at org.eclipse.jdt.internal.core.PackageFragment.getAttachedJavadoc(PackageFragment.java:587)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:2149)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:532)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:93)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:78)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:63)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:590)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava%2fapplet%2fpackage-summary.html
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1924)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:871)
+	... 9 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2022-11-29 17:30:09.856
+!MESSAGE Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava%2fapplet%2fpackage-summary.html
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava%2fapplet%2fpackage-summary.html
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1974)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1969)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1968)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:885)
+	at org.eclipse.jdt.internal.core.PackageFragment.getAttachedJavadoc(PackageFragment.java:587)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:2149)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:532)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:93)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:78)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:63)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:590)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: https://docs.oracle.com/pls/rdman/handle404?X_ORCL_404path=%2fen%2fjava%2fjavase%2f11%2fdocs%2fapi%2fjava%2fapplet%2fpackage-summary.html
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1924)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:871)
+	... 9 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 18:34:55.878
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CnvaHoCf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 18:34:55.878
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.CnvaHoCf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 18:34:55.879
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-11-29 18:34:55.879
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CnvaHoCf => OK

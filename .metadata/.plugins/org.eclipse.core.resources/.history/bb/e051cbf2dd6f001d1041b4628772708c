@@ -1,0 +1,11 @@
+package com.basics.dateandtime;
+
+import java.text.*;
+public class DateTime {
+
+	public static void main(String[] args) {
+		Date today = new Date();
+
+	}
+
+}

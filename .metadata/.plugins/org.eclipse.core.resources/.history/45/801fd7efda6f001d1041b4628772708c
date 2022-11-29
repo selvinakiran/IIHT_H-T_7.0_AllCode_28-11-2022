@@ -1,0 +1,5 @@
+package com.basics.constructor;
+
+public interface IStudent {
+
+}

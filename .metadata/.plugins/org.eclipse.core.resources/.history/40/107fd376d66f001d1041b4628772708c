@@ -1,0 +1,19 @@
+package com.basics.methodreferences;
+
+public class RefDemo {
+
+	public static void main(String[] args) {
+		System.out.println("Method refernce Demo");
+		
+		IWork iWork = Project::projectProgress;
+		IWork iWork1 = Project::ThreadTask;
+		
+		iWork.doProject();
+		iWork1.doProject();
+		
+		
+		
+
+	}
+
+}

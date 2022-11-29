@@ -1,0 +1,12 @@
+package com.basics.functionalInterface;
+
+import java.util.function.Supplier;
+
+public class SupplierLambda {
+	
+	
+	static String product = "Android";
+	public static void main(String[] args) { 
+		Supplier<Boolean> boolSupplier = () -> product.length() == 10;
+	}
+}

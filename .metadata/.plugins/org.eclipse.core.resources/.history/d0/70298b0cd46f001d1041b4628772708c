@@ -1,0 +1,19 @@
+package com.basics.functionalInterface;
+
+import java.util.function.Supplier;
+
+public class SupplierLambda {
+
+	public static void main(String[] args) {
+		
+		
+		//	Supplier<String> supply = () -> {
+		//		System.out.println("");
+				
+		//		};
+		//return supply.get();
+		
+		
+	}
+
+}
