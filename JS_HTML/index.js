@@ -185,5 +185,9 @@ Animal.prototype = Object.create(dogs.prototype)
 let tommy = new Animal("Dolmination")
 console.log(tommy.display());
 
+function greet(){
+    alert("Greeting from Training");
+}
+
 
 
