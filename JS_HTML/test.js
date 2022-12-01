@@ -14,14 +14,15 @@ class Developers extends employees{      //child class
     }
 }
 
-// class HR extends employees{      //child class
-//     constructor(employeename, modelname, prize) {
-//         this.employeename = employeename;
-//         this.experience = experience;
-//         this.position = position;
+class HR extends employees{      //child class
+    constructor(employeename, experience, position) {
+        super();
+        this.employeename = employeename;
+        this.experience = experience;
+        this.position = position;
 
-//     }
-// }
+    }
+}
 
 // class Finance extends employees{      //child class
 //     constructor(){
@@ -63,5 +64,6 @@ class Developers extends employees{      //child class
 // }
 
 let a1 = new Developers (" Selvina ", " 4 ","IT");
-
+let a2 = new HR (" Selvina ", " 4 ","IT");
 console.log("This is the " + a1.employeename + " " + a1.experience + " " + a1.position);
+console.log("This is the " + a2.employeename + " " + a2.experience + " " + a2.position);
