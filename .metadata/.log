@@ -1974,3 +1974,1697 @@ Caused by: java.net.SocketException: Connection reset
 
 !ENTRY org.eclipse.ui 2 2 2022-11-30 02:14:06.198
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-12-02 13:58:42.795 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=11.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-12-02 13:58:54.455
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-02 13:58:54.455
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@129e45eb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15c3849f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:58:58.544
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:58:58.555
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6ddeeb78[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-12-02 13:58:58.562
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\cogjava4571'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:58:58.564
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:58:58.822
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.940
+!MESSAGE Boot LS startup time from start to initialized: 5322ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.968
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LVbpbwJmisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.971
+!MESSAGE subscribing to classpath changes: sts4.classpath.LVbpbwJm isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.973
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.975
+!MESSAGE subsribers = {sts4.classpath.LVbpbwJm=Send Classpath Notifications(62)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.975
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.975
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.976
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.976
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LVbpbwJm => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.976
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.977
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.979
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.980
+!MESSAGE buffering callback sts4.classpath.LVbpbwJm Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:03.980
+!MESSAGE executing callback sts4.classpath.LVbpbwJm 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 13:59:04.008
+!MESSAGE executing callback sts4.classpath.LVbpbwJm SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:27:37.689
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.LVbpbwJm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:27:37.690
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.LVbpbwJm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:27:37.691
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:27:37.691
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.LVbpbwJm => OK
+
+!ENTRY org.eclipse.ui 2 2 2022-12-02 14:31:16.879
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:34.632
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:34.632
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6ddeeb78[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:34.633
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.030
+!MESSAGE Boot LS startup time from start to initialized: 5397ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.064
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qPFtiIRCisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.065
+!MESSAGE subscribing to classpath changes: sts4.classpath.qPFtiIRC isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.065
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.065
+!MESSAGE subsribers = {sts4.classpath.qPFtiIRC=Send Classpath Notifications(122)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.066
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.066
+!MESSAGE project learn-Testing ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.066
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.067
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.067
+!MESSAGE Preparing classpath changed notification learn-Testing
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.067
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qPFtiIRC => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.067
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.068
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.068
+!MESSAGE buffering callback sts4.classpath.qPFtiIRC learn-Testing false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.069
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.069
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.069
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.070
+!MESSAGE buffering callback sts4.classpath.qPFtiIRC Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.070
+!MESSAGE executing callback sts4.classpath.qPFtiIRC 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:31:40.103
+!MESSAGE executing callback sts4.classpath.qPFtiIRC SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:13.555
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qPFtiIRC
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:13.556
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.qPFtiIRC
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:13.556
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:13.557
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qPFtiIRC => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:32.860
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:32.863
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6ddeeb78[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:32.864
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:33.171
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:33.172
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6ddeeb78[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:33.173
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.135
+!MESSAGE Boot LS startup time from start to initialized: 1961ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.167
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TMgMhRiuisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.168
+!MESSAGE subscribing to classpath changes: sts4.classpath.TMgMhRiu isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.169
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.169
+!MESSAGE subsribers = {sts4.classpath.TMgMhRiu=Send Classpath Notifications(144)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.169
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.170
+!MESSAGE project learn-Testing ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.170
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.170
+!MESSAGE Preparing classpath changed notification learn-Testing
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.170
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.171
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.171
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TMgMhRiu => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.172
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.172
+!MESSAGE buffering callback sts4.classpath.TMgMhRiu learn-Testing false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.172
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.172
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.173
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.173
+!MESSAGE buffering callback sts4.classpath.TMgMhRiu Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.174
+!MESSAGE executing callback sts4.classpath.TMgMhRiu 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:32:35.208
+!MESSAGE executing callback sts4.classpath.TMgMhRiu SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:34:20.176
+!MESSAGE Preparing classpath changed notification learn-Testing
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:34:20.176
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:34:20.177
+!MESSAGE classpath=16 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:34:20.177
+!MESSAGE buffering callback sts4.classpath.TMgMhRiu learn-Testing false 16
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:34:20.178
+!MESSAGE executing callback sts4.classpath.TMgMhRiu 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 14:34:20.184
+!MESSAGE executing callback sts4.classpath.TMgMhRiu SUCCESS [done]
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-12-02 14:45:22.120
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4-language-servers/e4.8/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-02 14:46:07.872
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4-language-servers/e4.8/compositeContent.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-12-02 14:46:12.959
+!MESSAGE Connection to https://download.eclipse.org/releases/2019-09/201909181001/p2.index failed on Software caused connection abort: recv failed. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Software caused connection abort: recv failed
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLSocketImpl.handleException(SSLSocketImpl.java:1531)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:975)
+	at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:84)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Software caused connection abort: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 26 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1318)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:959)
+	... 22 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-12-02 14:46:31.402
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4/update/latest/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-02 14:47:17.198
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4/update/latest/compositeContent.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-12-02 14:47:32.379
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4-language-server-integrations/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-02 14:48:18.179
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4-language-server-integrations/compositeContent.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2022-12-02 15:05:55.153
+!MESSAGE Failed to stream using org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport@46e7a41 - falling back to org.eclipse.epp.internal.mpc.core.util.TransportFactory$$Lambda$1186/0x000000010120b840@1fc166c7: Not in GZIP format
+!STACK 1
+org.eclipse.core.runtime.CoreException: Not in GZIP format
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:119)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	... 7 more
+Contains: Not in GZIP format
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2022-12-02 15:05:55.154
+!MESSAGE Not in GZIP format
+!STACK 0
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2022-12-02 15:05:55.154
+!MESSAGE Not in GZIP format
+!STACK 0
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2022-12-02 15:05:55.154
+!MESSAGE Not in GZIP format
+!STACK 0
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2022-12-02 15:05:55.154
+!MESSAGE Not in GZIP format
+!STACK 0
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:09:43.889
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TMgMhRiu
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:09:43.889
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.TMgMhRiu
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:09:43.890
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:09:43.890
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TMgMhRiu => OK
+!SESSION 2022-12-02 15:09:46.848 -----------------------------------------------
+eclipse.buildId=4.4.2.201911201053-RELEASE
+java.version=11.0.12
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-12-02 15:09:56.595
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-02 15:09:56.595
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@46df794e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5cd6a827,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:00.891
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:00.893
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@165edc76[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:00.896
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-12-02 15:10:01.141
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\cogjava4571'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:01.171
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.507
+!MESSAGE Boot LS startup time from start to initialized: 2588ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.597
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.NeywLgVpisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.601
+!MESSAGE subscribing to classpath changes: sts4.classpath.NeywLgVp isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.604
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.607
+!MESSAGE subsribers = {sts4.classpath.NeywLgVp=Send Classpath Notifications(55)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.607
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.608
+!MESSAGE project learn-Testing ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.609
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.609
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.610
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.NeywLgVp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.611
+!MESSAGE Preparing classpath changed notification learn-Testing
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.611
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.615
+!MESSAGE classpath=16 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.615
+!MESSAGE buffering callback sts4.classpath.NeywLgVp learn-Testing false 16
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.616
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.617
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.617
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.618
+!MESSAGE buffering callback sts4.classpath.NeywLgVp Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.619
+!MESSAGE executing callback sts4.classpath.NeywLgVp 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:10:03.668
+!MESSAGE executing callback sts4.classpath.NeywLgVp SUCCESS [done]
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2022-12-02 15:10:27.192
+!MESSAGE Failed to stream using org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport@180be852 - falling back to org.eclipse.epp.internal.mpc.core.util.TransportFactory$$Lambda$735/0x0000000100c6f440@5e2ab098: Not in GZIP format
+!STACK 1
+org.eclipse.core.runtime.CoreException: Not in GZIP format
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:119)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	... 7 more
+Contains: Not in GZIP format
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2022-12-02 15:10:27.194
+!MESSAGE Not in GZIP format
+!STACK 0
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2022-12-02 15:10:27.194
+!MESSAGE Not in GZIP format
+!STACK 0
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2022-12-02 15:10:27.194
+!MESSAGE Not in GZIP format
+!STACK 0
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2022-12-02 15:10:27.194
+!MESSAGE Not in GZIP format
+!STACK 0
+java.util.zip.ZipException: Not in GZIP format
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:166)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:80)
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:92)
+	at org.apache.http.client.entity.GZIPInputStreamFactory.create(GZIPInputStreamFactory.java:61)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.initWrapper(LazyDecompressingInputStream.java:51)
+	at org.apache.http.client.entity.LazyDecompressingInputStream.read(LazyDecompressingInputStream.java:63)
+	at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:138)
+	at org.apache.http.client.fluent.Response.returnResponse(Response.java:105)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:133)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport$1.handleResponse(HttpClientTransport.java:1)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:165)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:53)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:34:49.219
+!MESSAGE Preparing classpath changed notification learnMochito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:34:49.220
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:34:49.222
+!MESSAGE classpath=6 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:34:49.222
+!MESSAGE buffering callback sts4.classpath.NeywLgVp learnMochito false 6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:34:49.222
+!MESSAGE executing callback sts4.classpath.NeywLgVp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:34:49.234
+!MESSAGE executing callback sts4.classpath.NeywLgVp SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-12-02 15:34:53.979
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.345
+!MESSAGE Preparing classpath changed notification learnMochito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.346
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.346
+!MESSAGE buffering callback sts4.classpath.NeywLgVp learnMochito true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.347
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.347
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.349
+!MESSAGE classpath=5 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.349
+!MESSAGE buffering callback sts4.classpath.NeywLgVp learnMockito false 5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.349
+!MESSAGE executing callback sts4.classpath.NeywLgVp 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:09.358
+!MESSAGE executing callback sts4.classpath.NeywLgVp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:10.014
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:10.015
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:10.016
+!MESSAGE classpath=6 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:10.016
+!MESSAGE buffering callback sts4.classpath.NeywLgVp learnMockito false 6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:10.017
+!MESSAGE executing callback sts4.classpath.NeywLgVp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:35:10.022
+!MESSAGE executing callback sts4.classpath.NeywLgVp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:03.176
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.NeywLgVp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:03.177
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.NeywLgVp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:03.177
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:03.178
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.NeywLgVp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:06.469
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:06.470
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@165edc76[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:06.470
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.549
+!MESSAGE Boot LS startup time from start to initialized: 2077ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.584
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GvSStkjaisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.585
+!MESSAGE subscribing to classpath changes: sts4.classpath.GvSStkja isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.585
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.586
+!MESSAGE subsribers = {sts4.classpath.GvSStkja=Send Classpath Notifications(261)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.586
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.586
+!MESSAGE project learnMockito ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.587
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.587
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.587
+!MESSAGE project learn-Testing ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.588
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.588
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.GvSStkja => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.588
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.589
+!MESSAGE classpath=6 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.590
+!MESSAGE buffering callback sts4.classpath.GvSStkja learnMockito false 6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.590
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.590
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.591
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.591
+!MESSAGE buffering callback sts4.classpath.GvSStkja Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.591
+!MESSAGE Preparing classpath changed notification learn-Testing
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.591
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.592
+!MESSAGE classpath=16 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.592
+!MESSAGE buffering callback sts4.classpath.GvSStkja learn-Testing false 16
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.593
+!MESSAGE executing callback sts4.classpath.GvSStkja 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:36:08.628
+!MESSAGE executing callback sts4.classpath.GvSStkja SUCCESS [done]
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-12-02 15:42:03.700
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4-language-servers/e4.8/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-02 15:42:50.005
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4-language-servers/e4.8/compositeContent.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-12-02 15:43:14.315
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4/update/latest/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-02 15:44:00.632
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4/update/latest/compositeContent.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-12-02 15:44:15.985
+!MESSAGE Connection to https://download.springsource.com/release/TOOLS/sts4-language-server-integrations/p2.index failed on Connection reset. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 23 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 20 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-02 15:45:02.310
+!MESSAGE Unable to read repository at https://download.springsource.com/release/TOOLS/sts4-language-server-integrations/compositeContent.xml.
+!STACK 0
+javax.net.ssl.SSLException: Connection reset
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:369)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:312)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:307)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:144)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1369)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1278)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:401)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:373)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110)
+		at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+		at java.base/sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:83)
+		at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:400)
+		... 21 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 18 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:36.719
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:36.719
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:36.720
+!MESSAGE classpath=7 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:36.721
+!MESSAGE buffering callback sts4.classpath.GvSStkja learnMockito false 7
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:36.721
+!MESSAGE executing callback sts4.classpath.GvSStkja 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:36.727
+!MESSAGE executing callback sts4.classpath.GvSStkja SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:39.414
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:39.415
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:39.416
+!MESSAGE classpath=7 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:39.416
+!MESSAGE buffering callback sts4.classpath.GvSStkja learnMockito false 7
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:39.416
+!MESSAGE executing callback sts4.classpath.GvSStkja 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 15:55:39.419
+!MESSAGE executing callback sts4.classpath.GvSStkja SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:07:48.309
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GvSStkja
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:07:48.309
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.GvSStkja
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:07:48.310
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:07:48.310
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GvSStkja => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:30.182
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:30.183
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@165edc76[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:30.183
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.962
+!MESSAGE Boot LS startup time from start to initialized: 1777ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.993
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WghQbNVnisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.994
+!MESSAGE subscribing to classpath changes: sts4.classpath.WghQbNVn isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.995
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.995
+!MESSAGE subsribers = {sts4.classpath.WghQbNVn=Send Classpath Notifications(430)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.995
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.995
+!MESSAGE project learnMockito ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.996
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.996
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.996
+!MESSAGE project learn-Testing ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.996
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.997
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.997
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WghQbNVn => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.998
+!MESSAGE classpath=7 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.998
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learnMockito false 7
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.998
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.999
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.999
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:31.999
+!MESSAGE buffering callback sts4.classpath.WghQbNVn Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:32.000
+!MESSAGE Preparing classpath changed notification learn-Testing
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:32.000
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:32.001
+!MESSAGE classpath=16 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:32.001
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learn-Testing false 16
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:32.001
+!MESSAGE executing callback sts4.classpath.WghQbNVn 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:10:32.034
+!MESSAGE executing callback sts4.classpath.WghQbNVn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:16:57.682
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:16:57.683
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:16:57.684
+!MESSAGE classpath=8 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:16:57.684
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learnMockito false 8
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:16:57.684
+!MESSAGE executing callback sts4.classpath.WghQbNVn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:16:57.688
+!MESSAGE executing callback sts4.classpath.WghQbNVn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:17:01.190
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:17:01.190
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:17:01.191
+!MESSAGE classpath=8 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:17:01.192
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learnMockito false 8
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:17:01.192
+!MESSAGE executing callback sts4.classpath.WghQbNVn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:17:01.194
+!MESSAGE executing callback sts4.classpath.WghQbNVn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:29.938
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:29.939
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:29.940
+!MESSAGE classpath=8 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:29.940
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learnMockito false 8
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:29.940
+!MESSAGE executing callback sts4.classpath.WghQbNVn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:29.944
+!MESSAGE executing callback sts4.classpath.WghQbNVn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:32.126
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:32.127
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:32.127
+!MESSAGE classpath=8 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:32.128
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learnMockito false 8
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:32.128
+!MESSAGE executing callback sts4.classpath.WghQbNVn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:55:32.130
+!MESSAGE executing callback sts4.classpath.WghQbNVn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:05.385
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:05.386
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:05.387
+!MESSAGE classpath=11 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:05.388
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learnMockito false 11
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:05.388
+!MESSAGE executing callback sts4.classpath.WghQbNVn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:05.392
+!MESSAGE executing callback sts4.classpath.WghQbNVn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:09.665
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:09.665
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:09.666
+!MESSAGE classpath=11 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:09.667
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learnMockito false 11
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:09.667
+!MESSAGE executing callback sts4.classpath.WghQbNVn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:09.669
+!MESSAGE executing callback sts4.classpath.WghQbNVn SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:14.110
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:14.110
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:14.111
+!MESSAGE classpath=11 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:14.112
+!MESSAGE buffering callback sts4.classpath.WghQbNVn learnMockito false 11
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:14.112
+!MESSAGE executing callback sts4.classpath.WghQbNVn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-02 16:59:14.114
+!MESSAGE executing callback sts4.classpath.WghQbNVn SUCCESS [done]

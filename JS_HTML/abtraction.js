@@ -19,6 +19,6 @@ function car (color,model,cost,fueltype){
         }
 }
 
-let balenoo=new car("black","A1","5000000","Petrol");
-balenoo.getDetails();
+let balenoo=new car("black","A1",5000000,"Petrol",39999);
+console.log(balenoo.getDetails());
 console.log(balenoo.totalcostofOwership());

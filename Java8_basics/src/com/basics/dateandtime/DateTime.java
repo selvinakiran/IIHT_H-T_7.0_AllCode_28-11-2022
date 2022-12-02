@@ -1,6 +1,5 @@
 package com.basics.dateandtime;
 
-import java.text.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -9,7 +8,7 @@ import java.time.ZoneId;
 public class DateTime {
 
 	public static void main(String[] args) {
-		//Date today = new Date();
+		//Date today = new Date();  //lagacy way
 		
 		LocalDate today = LocalDate.now();
 		

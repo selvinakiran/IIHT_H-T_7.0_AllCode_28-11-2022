@@ -11,4 +11,6 @@
     <fullyQualifiedTypeName name="java.time.Month"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="java.time.ZoneId"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 </qualifiedTypeNameHistroy>
