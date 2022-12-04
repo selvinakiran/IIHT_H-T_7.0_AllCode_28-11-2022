@@ -4,10 +4,10 @@ public class Institution {
 	private int course_id;
 	private String course_name;
 	private String course_teacher;
-	private float course_duration;
+	private long course_duration;
 	private int total_fees;
 	
-	public Institution(int course_id,String course_name,String course_teacher,float course_duration,int total_fees)
+	public Institution(int course_id,String course_name,String course_teacher,long course_duration,int total_fees)
 	{
 		super();
 		this.course_id=course_id;
@@ -45,11 +45,12 @@ public class Institution {
 
 
 
-	public float getCourse_duration() {
+
+	public long getCourse_duration() {
 		return course_duration;
 	}
 
-	public void setCourse_duration(float course_duration) {
+	public void setCourse_duration(long course_duration) {
 		this.course_duration = course_duration;
 	}
 
