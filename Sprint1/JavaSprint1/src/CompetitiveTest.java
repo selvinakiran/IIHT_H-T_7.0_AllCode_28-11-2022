@@ -49,9 +49,9 @@ public class CompetitiveTest {
 	//Test case 2 completed 
 	Collections.sort(institute,(o1,o2) -> (int) (o1.getCourse_duration() -o2.getCourse_duration()));
 	System.out.println("Ascending Order for Duration ::"+institute);
-	
-	Collections.sort(institute,(o1,o2) -> (int) (o2.getCourse_duration() -o1.getCourse_duration()));
-	System.out.println("Ascending Order for Duration ::"+institute);
+	//In case needed
+	//Collections.sort(institute,(o1,o2) -> (int) (o2.getCourse_duration() -o1.getCourse_duration()));
+	//System.out.println("Ascending Order for Duration ::"+institute);
 	
 	//We can also use streamAPI,collection and method references	
 		

@@ -18,11 +18,10 @@
                 <h4 style="padding-left: 10px; color: grey;">Personal Details</h4>
                 <div class="row">
                     <div class="column">
-
                         <label for="name">Full Name</label>
                         <br />
                         <input type="text" id="name" name="fullname" placeholder="Enter your name"
-                            pattern="[A-Za-z ]{3,32}" title="Name should contains alphabets only">
+                            pattern="[A-Za-z ]" title="Name should contains alphabets only">
                     </div>
                     <div class="column">
                         <label for="dob">Date of birth</label>
@@ -39,8 +38,8 @@
                     <div class="column">
                         <label for="mobnumber">Mobile Number</label>
                         <br />
-                        <input type="text" id="number" name="number" placeholder="Enter mobile number"
-                            pattern="^[789]\d{9,9}$" title="Format: start with 7-9 and remaing 9 digit with 0-9">
+                        <input type="text" id="phone" name="phone" placeholder="Enter mobile number"
+                            pattern="^[9]\d{9,9}$" length="10" title="Format: start with 9 and give 10 digit">
                     </div>
                     <div class="column">
                         <label for="gender">Gender</label>
@@ -68,9 +67,9 @@
                         <input type="text" id="idnumber" name="idnumber" placeholder="Enter ID number">
                     </div>
                     <div class="column">
-                        <label for="issuedept">Issue Authority</label>
+                        <label for="depart">Issue Authority</label>
                         <br />
-                        <input type="text" id="issuedept" name="issuedept" placeholder="Enter issue department">
+                        <input type="text" id="depart" name="depart" placeholder="Enter issue department">
                     </div>
                 </div>
                 <div class="row">

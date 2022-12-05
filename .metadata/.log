@@ -5094,3 +5094,142 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 12:15:19.741
 !MESSAGE executing callback sts4.classpath.rgoOdjYI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:28.765
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rgoOdjYI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:28.766
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.rgoOdjYI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:28.766
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:28.766
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rgoOdjYI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:35.805
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:35.805
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1a524c6b[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:35.806
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-12-05 13:51:38.379
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.540
+!MESSAGE Boot LS startup time from start to initialized: 5733ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.567
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.DXeeSjZsisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.568
+!MESSAGE subscribing to classpath changes: sts4.classpath.DXeeSjZs isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.568
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.568
+!MESSAGE subsribers = {sts4.classpath.DXeeSjZs=Send Classpath Notifications(452)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.569
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.569
+!MESSAGE project JavaSprint1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.569
+!MESSAGE project Java8_basics ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.569
+!MESSAGE Preparing classpath changed notification JavaSprint1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.570
+!MESSAGE project learn-Testing ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.570
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.570
+!MESSAGE project learnMockito ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.570
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.571
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.571
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.DXeeSjZs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.571
+!MESSAGE buffering callback sts4.classpath.DXeeSjZs JavaSprint1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.571
+!MESSAGE Preparing classpath changed notification Java8_basics
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.572
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.572
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.572
+!MESSAGE buffering callback sts4.classpath.DXeeSjZs Java8_basics false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.573
+!MESSAGE Preparing classpath changed notification learn-Testing
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.573
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.573
+!MESSAGE classpath=16 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.574
+!MESSAGE buffering callback sts4.classpath.DXeeSjZs learn-Testing false 16
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.574
+!MESSAGE Preparing classpath changed notification learnMockito
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.574
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.576
+!MESSAGE classpath=11 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.576
+!MESSAGE buffering callback sts4.classpath.DXeeSjZs learnMockito false 11
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.576
+!MESSAGE executing callback sts4.classpath.DXeeSjZs 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 13:51:41.611
+!MESSAGE executing callback sts4.classpath.DXeeSjZs SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 15:40:50.948
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DXeeSjZs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 15:40:50.949
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.DXeeSjZs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 15:40:50.949
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-05 15:40:50.949
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DXeeSjZs => OK
+
+!ENTRY org.eclipse.ui 2 2 2022-12-05 15:40:51.479
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
