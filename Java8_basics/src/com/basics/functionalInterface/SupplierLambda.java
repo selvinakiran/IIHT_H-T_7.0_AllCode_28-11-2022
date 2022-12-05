@@ -4,7 +4,7 @@ import java.util.function.Supplier;
 
 public class SupplierLambda {
 	
-	static String product = "Android";
+	static String product = "Andriod";
 	public static void main(String[] args) { 
 		
 		 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="Testindex.js"></script>
+    <link rel="stylesheet" href="Testindex.css">
+</head>
+
+<body style="background-color:#337DFF;">
+    <div class="container center">
+        <h2 style="padding-left: 10px; font-style: italic;">Registration</h2>
+        <form action="./thankyouPage.html">
+            <div>
+                <h4 style="padding-left: 10px; color: grey;">Personal Details</h4>
+                <div class="row">
+                    <div class="column">
+
+                        <label for="name">Full Name</label>
+                        <br />
+                        <input type="text" id="name" name="fullname" placeholder="Enter your name"
+                            pattern="[A-Za-z ]{3,32}" title="Name should contains alphabets only">
+                    </div>
+                    <div class="column">
+                        <label for="dob">Date of birth</label>
+                        <br />
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    <div class="column">
+                        <label for="email">Email</label>
+                        <br />
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="mobnumber">Mobile Number</label>
+                        <br />
+                        <input type="text" id="number" name="number" placeholder="Enter mobile number"
+                            pattern="^[789]\d{9,9}$" title="Format: start with 7-9 and remaing 9 digit with 0-9">
+                    </div>
+                    <div class="column">
+                        <label for="gender">Gender</label>
+                        <br />
+                        <input type="text" id="gender" name="gender" placeholder="Enter your gender">
+                    </div>
+                    <div class="column">
+                        <label for="occupation">Occupation</label>
+                        <br />
+                        <input type="text" id="occupation" name="occupation" placeholder="Enter occupation">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 style="padding-left: 10px; color: grey;">Identity Details</h4>
+                <div class="row">
+                    <div class="column">
+                        <label for="idtype">ID Type</label>
+                        <br />
+                        <input type="text" id="idtype" name="idtype" placeholder="Enter ID type">
+                    </div>
+                    <div class="column">
+                        <label for="idnumber">ID Number</label>
+                        <br />
+                        <input type="text" id="idnumber" name="idnumber" placeholder="Enter ID number">
+                    </div>
+                    <div class="column">
+                        <label for="issuedept">Issue Authority</label>
+                        <br />
+                        <input type="text" id="issuedept" name="issuedept" placeholder="Enter issue department">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="issuedate">Issue Date</label>
+                        <br />
+                        <input type="date" id="issuedate" name="issuedate">
+                    </div>
+                    <div class="column">
+                        <label for="issuestate">Issue State</label>
+                        <br />
+                        <input type="text" id="issuestate" name="issuestate" placeholder="Enter ID issue state">
+                    </div>
+                    <div class="column">
+                        <label for="expdate">Expiry Date</label>
+                        <br />
+                        <input type="date" id="expdate" name="expdate">
+                    </div>
+                </div>
+            </div>
+            <div style="padding-left: 10px; color:#337DFF;">
+                <button type="submit" onclick="greet()">Next &#8594</button>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
