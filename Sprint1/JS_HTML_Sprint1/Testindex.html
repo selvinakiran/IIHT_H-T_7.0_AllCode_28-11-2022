@@ -13,15 +13,16 @@
 <body style="background-color:#337DFF;">
     <div class="container center">
         <h2 style="padding-left: 10px; font-style: italic;">Registration</h2>
-        <form action="./thankyouPage.html">
+        <!-- <form action="./thankyouPage.html"> -->
+            <form id="form1" onsubmit="printvalues(event)">
             <div>
                 <h4 style="padding-left: 10px; color: grey;">Personal Details</h4>
                 <div class="row">
                     <div class="column">
                         <label for="name">Full Name</label>
                         <br />
-                        <input type="text" id="name" name="fullname" placeholder="Enter your name"
-                            pattern="[A-Za-z ]" title="Name should contains alphabets only">
+                        <input type="text" id="name" name="fullname" placeholder="Enter your name" pattern="[A-Za-z ]{3,32}"
+                            title="Name should contains alphabets only">
                     </div>
                     <div class="column">
                         <label for="dob">Date of birth</label>
@@ -39,7 +40,7 @@
                         <label for="mobnumber">Mobile Number</label>
                         <br />
                         <input type="text" id="phone" name="phone" placeholder="Enter mobile number"
-                            pattern="^[9]\d{9,9}$" length="10" title="Format: start with 9 and give 10 digit">
+                            pattern="^[89]\d{9,9}$" length="10" title="Format: start with 9 and give 10 digit">
                     </div>
                     <div class="column">
                         <label for="gender">Gender</label>
@@ -91,9 +92,9 @@
                 </div>
             </div>
             <div style="padding-left: 10px; color:#337DFF;">
-                <button type="submit" onclick="greet()">Next &#8594</button>
-
+                <button type="submit">Next &#8594</button>
             </div>
+
         </form>
     </div>
 
