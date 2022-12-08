@@ -1,0 +1,29 @@
+package com.resourse.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.resourse.entity.Resourse;
+import com.resourse.service.IResourseService;
+
+
+@RestController
+@RequestMapping("/resourse")
+public class ResourseController {
+	
+	@Autowired
+	private IResourseService resourseservice;
+	
+	@GetMapping("/hr/{userID}")
+	public List<Resourse> getresourse(@PathVariable("userID") Long userID) {
+		return this.resourseservice.getResourse(userID);
+		
+		
+}
+
+}

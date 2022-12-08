@@ -8,10 +8,10 @@
 		<version>2.7.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.hr</groupId>
-	<artifactId>HRManagement</artifactId>
+	<groupId>com.resourse</groupId>
+	<artifactId>Resourse-Service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HRManagement</name>
+	<name>Resourse-Service</name>
 	<description>HR Service is created for Microservices</description>
 	<properties>
 		<java.version>11</java.version>
