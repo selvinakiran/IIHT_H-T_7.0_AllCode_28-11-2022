@@ -11,5 +11,7 @@ public interface IBookService {
 	public List<Book> getAllBooks();
 
 	public Book getLoginById(Integer id);
+	
+	public void subscribeBookById(Integer id);
 
 }

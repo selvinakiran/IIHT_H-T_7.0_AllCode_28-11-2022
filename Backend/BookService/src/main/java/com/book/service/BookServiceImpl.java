@@ -28,8 +28,23 @@ public class BookServiceImpl implements IBookService {
 
 	@Override
 	public Book getLoginById(Integer id) {
-		// TODO Auto-generated method stub
 		return bookRepo.findById(id).orElse(null);
+	}
+
+	@Override
+	public void subscribeBookById(Integer id) {
+		Book existBook = bookRepo.findById(id).orElseThrow(() -> new com.book.exception.BookNotFoundExceptionHandler("Book", "id", id));
+		Boolean status = existBook.isActive();
+		System.out.println(status);
+		if (status) {
+			status = false;
+		} else {
+			status = true;
+		}
+		System.out.println(status);
+		existBook.setActive(status);
+		bookRepo.save(existBook);
+
 	}
 
 	

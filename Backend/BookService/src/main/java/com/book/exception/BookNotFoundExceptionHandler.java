@@ -3,18 +3,32 @@ package com.book.exception;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@ResponseStatus(value = HttpStatus.NOT_FOUND)
+@ResponseStatus(HttpStatus.NOT_FOUND)
 public class BookNotFoundExceptionHandler extends RuntimeException {
 
-	private String entity;
+	private static final long serialVersionUID = 122345L;
+	private String resourceName;
 	private String fieldName;
-	private String fieldValue;
+	private Object fieldValue;
 
-	public BookNotFoundExceptionHandler(String entity, String fieldName, String fieldValue) {
-		super(String.format("%s with %s : %s was not found", entity, fieldName, fieldValue));
-		this.entity = entity;
+	public String getResourceName() {
+		return resourceName;
+	}
+
+	public String getFieldName() {
+		return fieldName;
+	}
+
+	public Object getFieldValue() {
+		return fieldValue;
+	}
+
+	public BookNotFoundExceptionHandler(String resourceName, String fieldName, Object fieldValue) {
+		super(String.format("%s not found with %s : %s", resourceName, fieldName, fieldValue));
+		this.resourceName = resourceName;
 		this.fieldName = fieldName;
 		this.fieldValue = fieldValue;
 	}
 
 }
+

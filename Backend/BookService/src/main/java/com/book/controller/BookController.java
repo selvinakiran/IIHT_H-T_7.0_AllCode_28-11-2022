@@ -36,7 +36,7 @@ public class BookController {
 	}
 	
 	
-	@PostMapping("/sign-up/{id}") //Three API Completed
+	@PostMapping("/sign-in/{id}") 
 	public ResponseEntity<?> getBookById(@PathVariable("id") Integer id,@RequestBody Book books) {
 		Book book = bookService.getLoginById(id);
 		if (book == null) {
@@ -46,5 +46,17 @@ public class BookController {
 		}
 	}
 	
-
+	@PostMapping("/{id}/subscribe") 
+	public ResponseEntity<?> subscribeBookById(@PathVariable("id") Integer id,@RequestBody Book books) {
+		Book book = bookService.getLoginById(id);
+		if (book == null) {
+			return new ResponseEntity<>("No such Subscrition available !", HttpStatus.NOT_FOUND);
+		} else {
+		
+			bookService.subscribeBookById(id);
+			return new ResponseEntity<>("Book Subscrition updated successfully !", HttpStatus.OK);
+		}
+	}
+	
+	
 }
