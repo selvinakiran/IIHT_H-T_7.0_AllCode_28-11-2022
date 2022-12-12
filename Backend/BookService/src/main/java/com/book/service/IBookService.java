@@ -10,10 +10,6 @@ public interface IBookService {
 	
 	public List<Book> getAllBooks();
 
-	public Book editBook(Book b, Integer bookId);
-
-//	public Boolean blockBook(String block);
-//
-//	public Boolean unblockBook(String block);
+	public Book getLoginById(Integer id);
 
 }

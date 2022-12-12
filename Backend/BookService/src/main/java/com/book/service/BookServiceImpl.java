@@ -24,25 +24,17 @@ public class BookServiceImpl implements IBookService {
 	public List<Book> getAllBooks() {
 		return bookRepo.findAll();
 	}
-	
+
 
 	@Override
-	public Book editBook(Book newBook, Integer bookId) {
+	public Book getLoginById(Integer id) {
 		// TODO Auto-generated method stub
-		return null;
+		return bookRepo.findById(id).orElse(null);
 	}
 
-//	@Override
-//	public Boolean blockBook(String block) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-//
-//	@Override
-//	public Boolean unblockBook(String block) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
+	
+
+	
 
 
 	
