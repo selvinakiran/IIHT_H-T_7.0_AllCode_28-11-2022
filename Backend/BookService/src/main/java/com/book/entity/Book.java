@@ -1,4 +1,4 @@
-package com.service.book.entity;
+package com.book.entity;
 
 import java.sql.Blob;
 import java.util.Date;

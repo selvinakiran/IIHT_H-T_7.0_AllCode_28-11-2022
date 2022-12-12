@@ -8,11 +8,11 @@
 		<version>2.7.7-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.service.book</groupId>
+	<groupId>com.book</groupId>
 	<artifactId>Book-Service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HR-Service-1</name>
-	<description>Project for the API endpoints related to the Book service</description>
+	<name>Book-Service</name>
+	<description>Creating Book service</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

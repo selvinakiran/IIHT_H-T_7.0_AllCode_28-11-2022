@@ -1,4 +1,4 @@
-package com.service.user.service;
+package com.user.service;
 
 public interface IUserService {
 
