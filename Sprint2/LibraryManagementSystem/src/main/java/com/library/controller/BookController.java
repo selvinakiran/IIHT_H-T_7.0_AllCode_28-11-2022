@@ -60,6 +60,24 @@ public class BookController {
 			return new ResponseEntity<>("Book status updated successfully !", HttpStatus.OK);
 		}
 	}
+	
+	//Sample for borrow status
+	//	@PutMapping("/borrow1/{id}")
+	//	public void changeStatus(@PathVariable Long id) {
+	//		bookService.changeBookStatus2(id);
+	//	}
+		
+	
+	@PutMapping("/borrow2/{id}")
+	public ResponseEntity<?> BorrowedStatus(@PathVariable("id") Long id) {
+		Book book = bookService.getBookById(id);
+		if (book == null) {
+			return new ResponseEntity<>("No such book available !", HttpStatus.NOT_FOUND);
+		} else {
+			bookService.changeBookStatus2(id);
+			return new ResponseEntity<>("Book status updated successfully !", HttpStatus.OK);
+		}
+	}
 
 	@DeleteMapping("/remove/{id}")
 	public ResponseEntity<?> deleteBook(@PathVariable("id") Long id) {
@@ -71,5 +89,7 @@ public class BookController {
 			return new ResponseEntity<>("Book deleted successfully !", HttpStatus.OK);
 		}
 	}
+	
+	
 
 }

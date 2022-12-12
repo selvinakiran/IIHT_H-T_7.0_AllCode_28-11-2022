@@ -48,6 +48,23 @@ public class BookServiceImpl implements IBookService {
 	public void changeBookStatus(Long id, Boolean isBorrowed) {
 		bookRepo.updateBorrowedById(isBorrowed, id);
 	}
+	
+	@Override
+	public void changeBookStatus2(Long id) {
+		Book existBook = bookRepo.findById(id).orElseThrow(() -> new com.library.exception.ResourceNotFoundExceptionHandler("Book", "id", id));
+		Boolean status = existBook.getBorrowed();
+		System.out.println(status);
+		if (status) {
+			status = false;
+		} else {
+			status = true;
+		}
+		System.out.println(status);
+		existBook.setBorrowed(status);
+		bookRepo.save(existBook);
+
+	}
+
 
 	@Override
 	public void deleteBook(Long id) {

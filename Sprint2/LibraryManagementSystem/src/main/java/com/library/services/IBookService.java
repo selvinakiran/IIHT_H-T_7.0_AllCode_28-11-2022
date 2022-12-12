@@ -15,6 +15,8 @@ public interface IBookService {
 	public Book updateBook(Long id, Book updateBook);
 
 	public void changeBookStatus(Long id, Boolean isBorrowed);
+	
+	public void changeBookStatus2(Long id);
 
 	public void deleteBook(Long id);
 
