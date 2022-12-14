@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelvinaComponent } from './selvina.component';
+import { UserformComponent } from './userform.component';
 
-describe('SelvinaComponent', () => {
-  let component: SelvinaComponent;
-  let fixture: ComponentFixture<SelvinaComponent>;
+describe('UserformComponent', () => {
+  let component: UserformComponent;
+  let fixture: ComponentFixture<UserformComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SelvinaComponent ]
+      declarations: [ UserformComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SelvinaComponent);
+    fixture = TestBed.createComponent(UserformComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
