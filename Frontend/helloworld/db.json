@@ -1,16 +1,43 @@
 {
   "users": [
     {
-      "firstname": "Selvina",
+      "firstname": "Jonita",
       "lastname": "kiran",
-      "age": 26,
+      "age": 2,
+      "email": "joni@gmail.com",
       "id": 1
     },
     {
       "firstname": "Mithra",
       "lastname": "kiran",
       "age": 28,
+      "email": "mithu@gmail.com",
       "id": 2
+    },
+    {
+      "firstname": "selvina",
+      "lastname": "kiran",
+      "age": "26",
+      "gender": "female",
+      "email": "ani@gmail.com",
+      "id": 3
+    },
+    
+    {
+      "firstname": "robin",
+      "lastname": "S",
+      "age": "27",
+      "gender": "male",
+      "email": "robi@gmail.com",
+      "id": 4
+    },
+    {
+      "firstname": "ravi",
+      "lastname": "S",
+      "age": "27",
+      "gender": "male",
+      "email": "ravi@gmail.com",
+      "id": 5
     }
   ]
 }

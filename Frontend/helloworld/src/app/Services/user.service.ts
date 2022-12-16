@@ -17,5 +17,13 @@ export class UserService {
     return this.http.post(Base_URL,user);
   }
 
+  getUsers(){
+    return this.http.get(Base_URL);
+  }
+
+  deleteUsers(user){
+    return this.http.get(Base_URL + "/" + user.id);
+  }
+
   constructor(private http: HttpClient) { }
 }
