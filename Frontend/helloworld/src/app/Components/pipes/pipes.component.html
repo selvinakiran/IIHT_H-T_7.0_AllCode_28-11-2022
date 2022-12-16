@@ -1,0 +1,7 @@
+<h2>Employee name:{{employee.name | uppercase}}</h2>
+<h2>Employee Salary:{{employee.BaseSalary | currency:"INR"}}</h2>
+<h2>Joined Date:{{employee.JoinedOn | date}}</h2>
+<h2> Qualification:{{employee.Qualification | lowercase}}</h2>
+<h2>Percentage:{{employee.WinningPertencage | percent}}</h2>
+<p>About: {{employee.About | ellipsis}}</p>
+<button (click)="about()" type="button" class="btn btn-primary">About</button>
