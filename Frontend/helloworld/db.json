@@ -22,22 +22,13 @@
       "email": "ani@gmail.com",
       "id": 3
     },
-    
     {
-      "firstname": "robin",
-      "lastname": "S",
-      "age": "27",
-      "gender": "male",
-      "email": "robi@gmail.com",
+      "firstname": "anisha",
+      "lastname": "dev",
+      "age": "1",
+      "gender": "female",
+      "email": "anish@gmail.com",
       "id": 4
-    },
-    {
-      "firstname": "ravi",
-      "lastname": "S",
-      "age": "27",
-      "gender": "male",
-      "email": "ravi@gmail.com",
-      "id": 5
     }
   ]
 }
