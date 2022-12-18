@@ -13,11 +13,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.library.entity.Book;
 import com.library.services.IBookService;
 
 @RestController
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/book")
 public class BookController {
 
