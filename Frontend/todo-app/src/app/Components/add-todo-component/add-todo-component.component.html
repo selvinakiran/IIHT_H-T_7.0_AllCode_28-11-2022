@@ -1,0 +1,23 @@
+<div style="background-color: violet; height: auto;margin-bottom: 5000px;">
+  <figure style ="border-style: double; border-color: slateblue; padding: 40px;" class="text-center">
+      <blockquote class="blockquote">
+        <p>To-Do List</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+       Add or remove your todos
+      </figcaption>
+    </figure>
+  
+    <div style ="margin-left: 100px; margin-right: 100px; width: auto; border-style: double;
+     border-color: blueviolet ; border-radius: 10px;" class="input-group input-group-lg">
+      <span class="input-group-text" id="inputGroup-sizing-lg">Enter your Todos</span>
+      <input #tododItem type="text" placeholder="Enter your Todos" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    </div>
+  
+    <button (click)="AddTodo(tododItem.value)"  style ="margin-left: 600px; margin-top: 50px;
+    "type="button" class="btn btn-success">Add Todo</button>
+      <br>
+      
+  
+  
+  </div>
