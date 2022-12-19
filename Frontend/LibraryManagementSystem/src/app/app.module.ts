@@ -12,6 +12,7 @@ import { AddBooksComponent } from './Components/add-books/add-books.component';
 import { GetBooksComponent } from './Components/get-books/get-books.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BarComponent } from './Components/bar/bar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     FooterComponent,
     AddBooksComponent,
-    GetBooksComponent
+    GetBooksComponent,
+    BarComponent
   ],
   imports: [
     BrowserModule,

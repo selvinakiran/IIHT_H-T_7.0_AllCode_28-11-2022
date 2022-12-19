@@ -16,6 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegUsersComponent } from './Components/reg-users/reg-users.component';
 import { PipesComponent } from './Components/pipes/pipes.component';
 import { EllipsisPipe } from './Pipe/ellipsis.pipe';
+import { FooterComponent } from './Components/footer/footer.component';
+import { AddbookComponent } from './Components/addbook/addbook.component';
+import { GetbookComponent } from './Components/getbook/getbook.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +29,10 @@ import { EllipsisPipe } from './Pipe/ellipsis.pipe';
     ContactComponent,
     RegUsersComponent,
     PipesComponent,
-    EllipsisPipe
+    EllipsisPipe,
+    FooterComponent,
+    AddbookComponent,
+    GetbookComponent
       
   ],
   imports: [
