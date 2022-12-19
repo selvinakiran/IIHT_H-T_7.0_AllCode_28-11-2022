@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Book from 'src/app/Entity/book'
+import  { BookService } from 'src/app/Services/book.service';
 
 @Component({
   selector: 'app-add-books',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddBooksComponent implements OnInit {
 
-  constructor() { }
+  book: Book = new Book();
+
+  constructor(private bookService: BookService) { }
+
+
 
   ngOnInit(): void {
+  }
+
+  createBook() {
+    const observables = this.bookService.createBook(this.book);
+    observables.subscribe(
+      (res: any) => {
+        console.log(res);
+      }, function (error) {
+        console.log(error);
+        alert("Something went wrong !, Please try again");
+      }
+    )
   }
 
 }
