@@ -18,17 +18,17 @@ export class BookService {
     genre: String;
     borrowed: boolean;
   }) {
-    return this.http.post(BASE_URL + "/add", book);
+    return this.http.post(BASE_URL + "/addbook", book);
   }
 
   //get all books
   getAllBooks() {
-    return this.http.get(BASE_URL + "/getall");
+    return this.http.get(BASE_URL + "/allbooks");
   }
 
   //delete book
   deleteBook(book: any) {
-    return this.http.delete(BASE_URL + "/delete/" + book.id);
+    return this.http.delete(BASE_URL + "/remove/" + book.id);
   }
 
 }
