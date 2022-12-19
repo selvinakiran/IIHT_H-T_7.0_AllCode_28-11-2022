@@ -17,7 +17,7 @@ import { AddTodoComponentComponent } from './Components/add-todo-component/add-t
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({Todos:TodoReducer})
+    StoreModule.forRoot({todos:TodoReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
