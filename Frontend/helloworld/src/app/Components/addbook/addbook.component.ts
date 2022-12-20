@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import Book from 'src/app/Entity/book'
 import  { BookService } from 'src/app/Services/book.service';
 
@@ -11,11 +12,13 @@ export class AddbookComponent implements OnInit {
 
   book: Book = new Book();
 
-  constructor(private bookService: BookService) { }
+  
 
-  ngOnInit(): void {
-  }
+  constructor(private bookService: BookService) {}
 
+  
+  
+  
   createBook() {
     const observables = this.bookService.createBook(this.book);
     observables.subscribe(
@@ -28,4 +31,8 @@ export class AddbookComponent implements OnInit {
     )
   }
 
+  ngOnInit(): void {
+   
+    
+  }
 }

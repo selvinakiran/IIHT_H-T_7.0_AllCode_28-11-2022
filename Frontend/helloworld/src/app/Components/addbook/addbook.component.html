@@ -1,34 +1,44 @@
-<div class="container-fluid p-5 center">
+<div class="container-fluid p-5 center" style="background-color: rgb(11, 224, 224);">
     <h2 class="fs-1 text-center">Add your Books</h2>
     <div class="row">
-        <form class="fs-6">
+         <form class="fs-6 requires-validation" novalidate #userForm="ngForm" >
             <div class="mb-3">
                 <label for="bname">Book Name</label>
-                <input type="text" [(ngModel)]="book.bookName" id="bname" name="bname"
+                <input type="text" [(ngModel)]="book.bookName"   class="form-control"  id="bname" name="bname"
+                    #bname="ngModel" [class.is-invalid]="bname.invalid && bname.touched"
                     placeholder="Enter your book name" pattern="[A-Za-z ]{3,32}"
                     title="Name should contains alphabets only" required>
+                    <div class="invalid-feedback">Book Name cannot be blank</div>
+                   
             </div>
             <div class="mb-3">
                 <label for="aname">Author Name</label>
-                <input type="text" [(ngModel)]="book.authorName" id="aname" name="aname"
+                <input type="text" [(ngModel)]="book.authorName" class="form-control"  id="aname" name="aname"
+                    #aname="ngModel" [class.is-invalid]="aname.invalid && aname.touched"  
                     placeholder="Enter author name" pattern="[A-Za-z ]{3,32}"
                     title="Name should contains alphabets only" required>
+                    <div class="invalid-feedback">Author Name cannot be blank</div>
             </div>
             <div class="mb-3">
                 <label for="prize">Price</label>
-                <input type="number" [(ngModel)]="book.price" id="prize" name="prize" placeholder="Enter amount here"
-                    pattern="[0-9]{1,2}" title="Price should contains numbers only" required>
+                <input type="number" [(ngModel)]="book.price" class="form-control" id="prize" name="prize" placeholder="Enter amount here"
+                #prize="ngModel" [class.is-invalid]="prize.invalid && prize.touched"     
+                title="Prize should contains numbers only" required>
+                <div class="invalid-feedback">Price cannot be blank</div>
             </div>
             <div class="mb-3">
                 <label for="gen">Genre</label>
-                <input type="text" [(ngModel)]="book.genre" id="gen" name="gen" placeholder="Enter genre here"
-                    pattern="[A-Za-z ]{4,32}" title="Genre should contains alphabets only" required>
+                <input type="text" [(ngModel)]="book.genre" class="form-control" id="gen" name="gen" placeholder="Enter genre here"
+                #gen="ngModel" [class.is-invalid]="gen.invalid && gen.touched" 
+                pattern="[A-Za-z ]{4,32}" title="Genre should contains alphabets only" required>
+                <div class="invalid-feedback">Genre cannot be blank</div>
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" [(ngModel)]="book.borrowed" class="form-check-input" id="bwd">
                 <label class="form-check-label" for="bwd">Borrowed</label>
             </div>
-            <button type="submit" (click)="createBook()" class="btn btn-primary">Submit</button>
-        </form>
+            <button  [disabled]="userForm.form.invalid"  type="submit" (click)="createBook()" class="btn btn-primary">Add </button>
+        </form> 
+        
     </div>
 </div>
