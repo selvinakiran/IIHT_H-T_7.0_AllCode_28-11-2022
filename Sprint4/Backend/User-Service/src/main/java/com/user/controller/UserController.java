@@ -52,7 +52,9 @@ public class UserController {
 		}
 		final UserDetails userDetails = userDataService.loadUserByUsername(request.getUsername());
 		final String token = jwtUtil.generateToken(userDetails);
-		return new ResponseEntity<>( new JwtResponse(token), HttpStatus.OK);
+		User loggedUser = userService.getUserByName(request.getUsername());
+		return new ResponseEntity<>(new JwtResponse(token, loggedUser.getUsername(), loggedUser.getRole().toString()),
+				HttpStatus.OK);
 	}
 
 }

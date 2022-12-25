@@ -5,6 +5,7 @@ import java.util.List;
 import com.book.entity.Book;
 import com.book.models.BookFilter;
 import com.book.models.SubscribeDetails;
+import com.book.entity.Notification;
 
 public interface IBookService {
 	
@@ -19,6 +20,10 @@ public interface IBookService {
 	
 	public List<Book> searchBook(BookFilter filter);
 	
+	public List<Book> getAllBooks(String author);
+	
+	public void deleteBook(Long id);
+	
 	//reader
 	public Long subscribeBook(Long bookId, SubscribeDetails subDetails);
 	
@@ -27,5 +32,8 @@ public interface IBookService {
 	public List<Book> getAllSubscribedBooks(String subName);
 	
 	public Book getBookBySubscribedId(String subName, Long subscribedId);
+	
+	//notification
+	public List<Notification> getAllNoteByuser(String username);
 	
 }

@@ -8,13 +8,13 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -53,8 +53,24 @@ public class UserBookController {
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 	
+	@GetMapping("/author/{username}/books")
+	public ResponseEntity<?> getAllBooks(@PathVariable("username") String username) {
+		List<?> result = restTemplate.getForObject("http://BOOK-SERVICE/" + username + "/books", List.class);
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
+	@DeleteMapping("/author/delete/{id}")
+	public ResponseEntity<?> deleteBook(@PathVariable("id") Long id) {
+		restTemplate.delete("http://BOOK-SERVICE/delete/" + id);
+		return new ResponseEntity<>("Book deleted successfully !", HttpStatus.OK);
+	}
+	
 	@PostMapping("/search")
 	public ResponseEntity<?> searchBooks(@RequestBody BookFilter filter) {
+		filter.setTitle(filter.getTitle() == "" ? null : filter.getTitle());
+		filter.setAuthor(filter.getAuthor() == "" ? null : filter.getAuthor());
+		filter.setPrice(filter.getPrice() == 0 ? null : filter.getPrice());
+		filter.setCategory(filter.getCategory() == "" ? null : filter.getCategory());
 		List<?> result = restTemplate.postForObject("http://BOOK-SERVICE/search", filter, List.class);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
@@ -80,16 +96,24 @@ public class UserBookController {
 	}
 
 	@GetMapping("/reader/getalluser/{subName}")
-	public ResponseEntity<?> getAllByUser(@RequestParam String subName) {
+	public ResponseEntity<?> getAllByUser(@PathVariable String subName) {
 		List<?> result = restTemplate.getForObject("http://BOOK-SERVICE/getalluser/" + subName, List.class);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
 	@GetMapping("/reader/get/{subId}/by-user/{subName}")
-	public ResponseEntity<?> getBookByUserAndSubId(@RequestParam String subName, @RequestParam Long subId) {
+	public ResponseEntity<?> getBookByUserAndSubId(@PathVariable String subName, @PathVariable Long subId) {
 		List<?> result = restTemplate.getForObject("http://BOOK-SERVICE/get/" + subId + "/by-user/" + subName,
 				List.class);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
+	
+		@GetMapping("/getall/notify/by-user/{subName}")
+	public ResponseEntity<?> getAllNotificationByUser(@PathVariable String subName) {
+		List<?> result = restTemplate.getForObject("http://BOOK-SERVICE/getall/note/by-user/" + subName, List.class);
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
+
 
 }
