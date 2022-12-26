@@ -46,7 +46,7 @@ public class ReaderController {
 		return new ResponseEntity<>(bookService.getBookBySubscribedId(subName, subId), HttpStatus.OK);
 	}
 	
-	@GetMapping("/getall/note/by-user/{subName}")
+	@GetMapping("/getallnotify/{subName}")
 	public ResponseEntity<?> getAllNotificationByUser(@PathVariable String subName) {
 		return new ResponseEntity<>(bookService.getAllNoteByuser(subName), HttpStatus.OK);
 	}

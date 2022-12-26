@@ -65,7 +65,7 @@ public class UserBookController {
 		return new ResponseEntity<>("Book deleted successfully !", HttpStatus.OK);
 	}
 	
-	@PostMapping("/search")
+	@PostMapping("/search/filter")
 	public ResponseEntity<?> searchBooks(@RequestBody BookFilter filter) {
 		filter.setTitle(filter.getTitle() == "" ? null : filter.getTitle());
 		filter.setAuthor(filter.getAuthor() == "" ? null : filter.getAuthor());
@@ -108,9 +108,9 @@ public class UserBookController {
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 	
-		@GetMapping("/getall/notify/by-user/{subName}")
+		@GetMapping("/reader/getallnotify/{subName}")
 	public ResponseEntity<?> getAllNotificationByUser(@PathVariable String subName) {
-		List<?> result = restTemplate.getForObject("http://BOOK-SERVICE/getall/note/by-user/" + subName, List.class);
+		List<?> result = restTemplate.getForObject("http://BOOK-SERVICE/getallnotify/" + subName, List.class);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
