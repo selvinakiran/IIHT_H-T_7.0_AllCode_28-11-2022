@@ -21,7 +21,7 @@ public class AuthorController {
 	@Autowired
 	private IBookService bookService;
 
-	@GetMapping("/{author}/books")
+	@GetMapping("/all/{author}")
 	public ResponseEntity<?> getAllBooks(@PathVariable("author") String author) {
 		return new ResponseEntity<>(bookService.getAllBooks(author), HttpStatus.OK);
 	}

@@ -26,7 +26,7 @@ export class SubscribedBookComponent implements OnInit {
 
   //get all subscribed books
   subscribedBooks() {
-    // console.log(this.filter);
+    
     const promise = this.bookService.subscribedBooks(this.tokenService.getUser().username);
     promise.subscribe(
       (res) => {

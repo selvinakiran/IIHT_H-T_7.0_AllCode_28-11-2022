@@ -5,7 +5,7 @@ export default class User {
     password: string = '';
     role: string = '';
     email: string = '';
-    // createdTime: Date = 
+    
 }
 
 export class JwtRequest {

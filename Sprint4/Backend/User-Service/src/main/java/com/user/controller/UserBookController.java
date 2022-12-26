@@ -53,9 +53,9 @@ public class UserBookController {
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 	
-	@GetMapping("/author/{username}/books")
+	@GetMapping("/author/all/{username}")
 	public ResponseEntity<?> getAllBooks(@PathVariable("username") String username) {
-		List<?> result = restTemplate.getForObject("http://BOOK-SERVICE/" + username + "/books", List.class);
+		List<?> result = restTemplate.getForObject("http://BOOK-SERVICE/all/" + username, List.class);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 

@@ -49,7 +49,7 @@ export class BookService {
   }
 
   getAllBooks() {
-    return this.http.get(BASE_URL + "/author/" + this.tokenService.getUser().username + "/books", this.httpOptions);
+    return this.http.get(BASE_URL + "/author/all/" + this.tokenService.getUser().username, this.httpOptions);
   }
 
   deleteBook(book: any) {

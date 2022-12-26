@@ -1,5 +1,5 @@
 export default class Book {
-    logo: any;
+    logo: string = '';
     title: string = '';
     description: string = '';
     category: string = '';
@@ -29,9 +29,4 @@ export class SubscribeDetails {
     subName: string = '';
     subRole: string = '';
     isSubscribed: boolean = false;
-}
-export class Notification {
-    username: string = '';
-    msg: string = '';
-    createdTime: any;
 }
