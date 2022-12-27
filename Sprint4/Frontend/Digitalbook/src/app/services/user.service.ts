@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-const BASE_URL = "http://ec2-3-89-20-89.compute-1.amazonaws.com:5000/api/v1/digitalbooks";
+const BASE_URL = "http://ec2-44-201-223-149.compute-1.amazonaws.com:5000/api/v1/digitalbooks";
 
 const reqHeaders = new HttpHeaders({
   'Content-Type': 'application/json'

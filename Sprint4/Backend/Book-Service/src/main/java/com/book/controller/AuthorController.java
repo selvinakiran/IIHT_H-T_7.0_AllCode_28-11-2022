@@ -10,12 +10,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.book.entity.Book;
 import com.book.models.BookFilter;
 import com.book.services.IBookService;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class AuthorController {
 	
 	@Autowired

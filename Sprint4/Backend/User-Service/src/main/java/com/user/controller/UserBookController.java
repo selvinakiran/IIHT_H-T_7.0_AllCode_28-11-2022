@@ -23,8 +23,8 @@ import com.user.models.BookFilter;
 import com.user.models.SubscribeDetails;
 
 @RestController
-@CrossOrigin(allowedHeaders="*",origins="*")
 @RequestMapping("/api/v1/digitalbooks")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserBookController {
 
 	@Autowired

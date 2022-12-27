@@ -20,8 +20,8 @@ import com.user.services.UserDataService;
 import com.user.utility.JWTUtility;
 
 @RestController
-@CrossOrigin(allowedHeaders="*",origins="*")
 @RequestMapping("/api/v1/digitalbooks")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserController {
 	
 	@Autowired

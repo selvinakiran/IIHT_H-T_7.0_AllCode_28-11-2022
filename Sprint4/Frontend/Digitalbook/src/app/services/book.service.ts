@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { BookContent, SubscribeDetails } from '../models/book';
 import { TokenStorageService } from './token-storage.service';
 
-const BASE_URL = "http://ec2-3-89-20-89.compute-1.amazonaws.com:5000/api/v1/digitalbooks";
+const BASE_URL = "http://ec2-44-201-223-149.compute-1.amazonaws.com:5000/api/v1/digitalbooks";
 
 @Injectable({
   providedIn: 'root'

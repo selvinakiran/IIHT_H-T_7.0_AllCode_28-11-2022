@@ -1,6 +1,7 @@
 package com.book.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ import com.book.models.SubscribeDetails;
 import com.book.services.IBookService;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ReaderController {
 
 	@Autowired
