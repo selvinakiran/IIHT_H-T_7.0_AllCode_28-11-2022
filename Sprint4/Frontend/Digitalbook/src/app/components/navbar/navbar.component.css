@@ -1,0 +1,17 @@
+a:hover {
+    color: green;
+}
+
+a:focus {
+    color: green;
+}
+.blink {
+    animation: blinker 1s step-start infinite;
+    color: blue;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
