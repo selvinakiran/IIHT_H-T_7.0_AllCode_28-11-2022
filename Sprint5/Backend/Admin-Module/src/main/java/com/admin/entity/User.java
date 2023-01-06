@@ -1,4 +1,4 @@
-package com.user.entity;
+package com.admin.entity;
 
 import java.time.LocalDateTime;
 
@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import com.user.models.Role;
+import com.admin.models.Role;
 
 @Entity
 @Table(name = "USER_DETAILS")
@@ -21,10 +21,10 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-
-	@Column(name = "EMPLOYEE_ID", unique = true)
-	private String employeeID;
+	private Long employeeId;
+	
+	@Column(name = "USERNAME", unique = true)
+	private String username;
 	
 	@Column(name = "FIRSTNAME")
 	private String firstName;
@@ -44,8 +44,6 @@ public class User {
 	@Column(name = "CREATION_TIMESTAMP")
 	private LocalDateTime createdTime;
 	
-	
-	
 	@Column(name = "LOCATION")
 	private String location;
 	
@@ -59,12 +57,21 @@ public class User {
 		super();
 	}
 
-	public Long getId() {
-		return id;
+
+	public Long getEmployeeId() {
+		return employeeId;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setEmployeeId(Long employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getFirstName() {
@@ -109,14 +116,9 @@ public class User {
 		this.createdTime = createdTime;
 	}
 
-	public String getEmployeeID() {
-		return employeeID;
-	}
+	
 
-	public void setEmployeeID(String employeeID) {
-		this.employeeID = employeeID;
-	}
-
+	
 	public String getLocation() {
 		return location;
 	}
@@ -141,13 +143,21 @@ public class User {
 		this.department = department;
 	}
 
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", employeeID=" + employeeID + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", password=" + password + ", role=" + role + ", createdTime=" + createdTime + ", location="
-				+ location + ", jobtitle=" + jobtitle + ", department=" + department + "]";
+		return "User [employeeId=" + employeeId + ", username=" + username + ", firstName=" + firstName + ", lastName="
+				+ lastName + ", password=" + password + ", role=" + role + ", createdTime=" + createdTime
+				+ ", location=" + location + ", jobtitle=" + jobtitle + ", department=" + department
+				+ ", getEmployeeId()=" + getEmployeeId() + ", getUsername()=" + getUsername() + ", getFirstName()="
+				+ getFirstName() + ", getLastName()=" + getLastName() + ", getPassword()=" + getPassword()
+				+ ", getRole()=" + getRole() + ", getCreatedTime()=" + getCreatedTime() + ", getLocation()="
+				+ getLocation() + ", getJobtitle()=" + getJobtitle() + ", getDepartment()=" + getDepartment()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
 	}
 
+	
 	
 	
 }

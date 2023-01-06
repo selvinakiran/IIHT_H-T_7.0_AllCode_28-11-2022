@@ -1,11 +1,11 @@
-package com.user.services;
+package com.admin.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.user.entity.User;
-import com.user.repository.UserRepository;
+import com.admin.entity.User;
+import com.admin.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements IUserService{
@@ -23,8 +23,8 @@ public class UserServiceImpl implements IUserService{
 	}
 
 	@Override
-	public User getUserByEmployeeID(String employeeID) {
-		return userRepo.findByEmployeeId(employeeID);
+	public User getUserByName(String username) {
+		return userRepo.findByUsername(username);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.user.filter;
+package com.admin.filter;
 
 import java.io.IOException;
 
@@ -15,8 +15,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.user.services.UserDataService;
-import com.user.utility.JWTUtility;
+import com.admin.services.UserDataService;
+import com.admin.utility.JWTUtility;
 
 @Component
 public class JWTFilter extends OncePerRequestFilter {

@@ -1,9 +1,9 @@
-package com.user.models;
+package com.admin.models;
 
 public class JwtResponse {
 
 	private String jwtToken;
-	private String employeeID;
+	private String username;
 	private String role;
 
 	public String getJwtToken() {
@@ -14,14 +14,12 @@ public class JwtResponse {
 		this.jwtToken = jwtToken;
 	}
 
-	
-
-	public String getEmployeeID() {
-		return employeeID;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setEmployeeID(String employeeID) {
-		this.employeeID = employeeID;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getRole() {
@@ -36,12 +34,11 @@ public class JwtResponse {
 		super();
 	}
 
-	public JwtResponse(String jwtToken, String employeeID, String role) {
+	public JwtResponse(String jwtToken, String username, String role) {
 		super();
 		this.jwtToken = jwtToken;
-		this.employeeID = employeeID;
+		this.username = username;
 		this.role = role;
 	}
 
-	
 }

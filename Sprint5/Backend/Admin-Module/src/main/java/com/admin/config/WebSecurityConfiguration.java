@@ -1,4 +1,4 @@
-package com.user.config;
+package com.admin.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +13,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.user.filter.JWTFilter;
-import com.user.services.UserDataService;
+import com.admin.filter.JWTFilter;
+import com.admin.services.UserDataService;
 
 @SuppressWarnings("deprecation")
 @Configuration

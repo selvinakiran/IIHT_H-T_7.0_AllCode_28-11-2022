@@ -1,4 +1,4 @@
-package com.user.controller;
+package com.admin.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,12 +12,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.user.entity.User;
-import com.user.models.JwtRequest;
-import com.user.models.JwtResponse;
-import com.user.services.IUserService;
-import com.user.services.UserDataService;
-import com.user.utility.JWTUtility;
+
+import com.admin.entity.User;
+import com.admin.models.JwtRequest;
+import com.admin.models.JwtResponse;
+import com.admin.services.IUserService;
+import com.admin.services.UserDataService;
+import com.admin.utility.JWTUtility;
 
 @RestController
 @RequestMapping("/api/adminmodule")
@@ -46,14 +47,15 @@ public class UserController {
 	public ResponseEntity<?> login(@RequestBody JwtRequest request) throws Exception {
 		try {
 			authenticationManager.authenticate(
-					new UsernamePasswordAuthenticationToken(request.getEmployeeID(), request.getPassword()));
+					new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
 		} catch (BadCredentialsException ex) {
 			throw new Exception("INVALID CREDENTIALS", ex);
 		}
-		final UserDetails userDetails = userDataService.loadUserByUsername(request.getEmployeeID());
+		final UserDetails userDetails = userDataService.loadUserByUsername(request.getUsername());
 		final String token = jwtUtil.generateToken(userDetails);
-		User loggedUser = userService.getUserByEmployeeID(request.getEmployeeID());
-		return new ResponseEntity<>(new JwtResponse(token, loggedUser.getEmployeeID(), loggedUser.getRole().toString()),HttpStatus.OK);
+		User loggedUser = userService.getUserByName(request.getUsername());
+		return new ResponseEntity<>(new JwtResponse(token, loggedUser.getUsername(), loggedUser.getRole().toString()),
+				HttpStatus.OK);
 	}
 
 }

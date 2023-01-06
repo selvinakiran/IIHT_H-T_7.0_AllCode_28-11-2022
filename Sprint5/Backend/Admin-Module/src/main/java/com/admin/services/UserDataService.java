@@ -1,4 +1,4 @@
-package com.user.services;
+package com.admin.services;
 
 import java.util.ArrayList;
 
@@ -16,13 +16,13 @@ public class UserDataService implements UserDetailsService {
 	private IUserService userService;
 
 	@Override
-	public UserDetails loadUserByUsername(String employeeID) throws UsernameNotFoundException {
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		// logic to get the user_name and password from database can be written here
-		com.user.entity.User user = userService.getUserByEmployeeID(employeeID);
+		com.admin.entity.User user = userService.getUserByName(username);
 		if (user == null) {
-			throw new UsernameNotFoundException("Employee ID not present !!!");
+			throw new UsernameNotFoundException("EmployeeName not present !!!");
 		}
-		return new User(user.getEmployeeID(), user.getPassword(), new ArrayList<>());
+		return new User(user.getUsername(), user.getPassword(), new ArrayList<>());
 	}
 
 }

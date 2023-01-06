@@ -1,4 +1,4 @@
-package com.user.utility;
+package com.admin.utility;
 
 import java.io.Serializable;
 import java.util.Date;
