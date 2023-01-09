@@ -1,5 +1,7 @@
 package com.admin.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -25,6 +27,16 @@ public class UserServiceImpl implements IUserService{
 	@Override
 	public User getUserByName(String username) {
 		return userRepo.findByUsername(username);
+	}
+
+	@Override
+	public User createuser(User newUser) {
+		return userRepo.save(newUser);
+	}
+
+	@Override
+	public List<User> getAllUser() {
+		return userRepo.findAll();
 	}
 
 }

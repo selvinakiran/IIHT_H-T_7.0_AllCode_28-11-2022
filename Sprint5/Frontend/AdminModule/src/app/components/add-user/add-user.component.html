@@ -1,0 +1,118 @@
+<div class="container center p-5">
+    <h2 class="text-center fs-3">Add User</h2>
+    <form [formGroup]="RegisterForm" (ngSubmit)="onSubmit()">
+        <div>
+            <h4 class="fs-5">User Details</h4>
+            <div class="row">
+                <div class="column">
+                         <label for="username" class="fs-6">Username</label>
+                        <input [(ngModel)]="user.username" type="text" class="form-control" placeholder="Enter username"
+                          formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
+                          id="username" pattern="[A-Za-z ]{3,32}">
+                        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                          <div *ngIf="f.username.errors.required">Username is required</div>
+                          <div *ngIf="f.username.errors.pattern">Username must be a valid username</div>
+                        </div>
+                       
+                      
+
+                </div>
+                <div class="column">
+                    <label for="floatingInput" class="fs-6">First Name</label>
+                    <input [(ngModel)]="user.firstName" type="text" class="form-control" id="floatingInput"
+                    placeholder="Enter firstname" formControlName="firstname" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" id="firstname"
+                    pattern="[A-Za-z ]{3,32}">
+                  <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+                    <div *ngIf="f.firstname.errors.required">Firstname is required</div>
+                    <div *ngIf="f.firstname.errors.pattern">Firstname must be a valid firstname</div>
+                  </div>
+                  
+                </div>
+                <div class="column">
+                    <label for="floatingInput" class="fs-6">Last Name</label>
+                    <input [(ngModel)]="user.lastName" type="text" class="form-control" id="floatingInput"
+                    placeholder="Enter lastname" formControlName="lastname" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" id="lastname"
+                    pattern="[A-Za-z ]{3,32}">
+                  <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastname.errors.required">Lastname is required</div>
+                    <div *ngIf="f.lastname.errors.pattern">Lastname must be a valid Lastname</div>
+                  </div>
+                  
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="floatingInput" class="fs-6">Location</label>
+                    <input [(ngModel)]="user.location" type="text" class="form-control" id="floatingInput"
+                    placeholder="Enter location" formControlName="location" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.location.errors }" id="location"
+                    pattern="[A-Za-z ]{3,32}">
+                  <div *ngIf="submitted && f.location.errors" class="invalid-feedback">
+                    <div *ngIf="f.location.errors.required">location is required</div>
+                    <div *ngIf="f.location.errors.pattern">location must be a valid </div>
+                  </div>
+                 
+                </div>
+                
+                <div class="column">
+                    <label for="floatingInput" class="fs-6">Job Title</label>
+                    <input [(ngModel)]="user.jobtitle" type="text" class="form-control" id="floatingInput"
+                    placeholder="Enter jobtitle" formControlName="jobtitle" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.jobtitle.errors }" id="jobtitle"
+                    pattern="[A-Za-z ]{3,32}">
+                  <div *ngIf="submitted && f.jobtitle.errors" class="invalid-feedback">
+                    <div *ngIf="f.jobtitle.errors.required">Job title is required</div>
+                    <div *ngIf="f.jobtitle.errors.pattern">Job title must be a valid Lastname</div>
+                  </div>
+                  
+                </div>
+
+                <div class="column">
+                    <label for="floatingInput" class="fs-6">Department</label>
+                    <input [(ngModel)]="user.department" type="text" class="form-control" id="floatingInput"
+                    placeholder="Enter department" formControlName="department" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" id="department"
+                    pattern="[A-Za-z ]{3,32}">
+                  <div *ngIf="submitted && f.department.errors" class="invalid-feedback">
+                    <div *ngIf="f.department.errors.required">Department is required</div>
+                    <div *ngIf="f.department.errors.pattern">Department must be a valid </div>
+                  </div>
+                  
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="floatingPassword" class="fs-6">Password</label>
+                    <input [(ngModel)]="user.password" type="password" class="form-control" id="floatingPassword"
+                    placeholder="Password" formControlName="password"
+                    [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="inputPassword4">
+                  <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">Password is required</div>
+                  </div>
+                  
+                </div>
+
+                <div class="column">
+                    <label for="isActive">Role</label>
+                    <select formControlName="isActive" [(ngModel)]="user.role" class="form-control form-select">
+                        <option [ngValue]="true">Report-User</option>
+                        <option [ngValue]="false">Compensation-User</option>
+                    </select>
+                </div>
+            </div>
+  
+           
+        </div>
+        <div>
+           
+          
+                <div class="pb-3" >
+                    <button type="submit">Submit</button>
+                </div> 
+          
+        </div>
+       
+    </form>
+</div>

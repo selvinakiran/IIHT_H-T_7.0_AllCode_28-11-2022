@@ -58,6 +58,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 		.permitAll()
 		.antMatchers("/api/adminmodule/sign-up")
 		.permitAll()
+//		.antMatchers("/api/adminmodule/add-user")
+//		.permitAll()
 		.anyRequest()
 		.authenticated()
 		.and()
