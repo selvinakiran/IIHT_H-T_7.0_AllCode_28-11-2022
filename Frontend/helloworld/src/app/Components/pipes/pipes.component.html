@@ -2,6 +2,6 @@
 <h2>Employee Salary:{{employee.BaseSalary | currency:"INR"}}</h2>
 <h2>Joined Date:{{employee.JoinedOn | date}}</h2>
 <h2> Qualification:{{employee.Qualification | lowercase}}</h2>
-<h2>Percentage:{{employee.WinningPertencage | percent}}</h2>
+<h2>Percentage:{{employee.WinningPertencage | percent }}</h2>
 <p>About: {{employee.About |ellipsis:param}}</p>
 <button id="info" style="margin: 10px;" type="button" (click)="param = 'full'" class="btn btn-primary">ABOUT</button>

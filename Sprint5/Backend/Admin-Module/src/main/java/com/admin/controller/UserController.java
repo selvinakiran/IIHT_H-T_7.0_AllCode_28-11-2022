@@ -25,7 +25,9 @@ import com.admin.utility.JWTUtility;
 
 @RestController
 @RequestMapping("/api/adminmodule")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "*", allowedHeaders = "*")
+
+@CrossOrigin
 public class UserController {
 	
 	@Autowired
@@ -67,7 +69,7 @@ public class UserController {
 		return new ResponseEntity<>(userService.createuser(user), HttpStatus.OK);
 	}
 	
-	
+	@CrossOrigin("http://localhost:4200")
 	@GetMapping("/alluser")
 	public ResponseEntity<List<User>> getAllBooks() {
 		return new ResponseEntity<>(userService.getAllUser(), HttpStatus.OK);

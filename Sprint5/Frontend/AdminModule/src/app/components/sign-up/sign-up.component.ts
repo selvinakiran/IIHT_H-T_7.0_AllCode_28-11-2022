@@ -16,29 +16,12 @@ export class SignUpComponent implements OnInit {
   submitted = false;
   user: User = new User();
 
-  constructor(
-    private formBuilder: FormBuilder,
+  constructor(private formBuilder: FormBuilder,
     private userService: UserService,
-    private snackBar: MatSnackBar) { }
+    private snackBar: MatSnackBar
+  ) { }
 
-  //Add user form actions
-  get f() { return this.RegisterForm.controls; }
-
-  onSubmit() {
-
-    this.submitted = true;
-    // stop here if form is invalid
-    if (this.RegisterForm.invalid) {
-      return;
-    }
-    //True if all the fields are filled
-    if (this.submitted) {
-      this.createUser();
-    }
-
-  }
-
-  ngOnInit() {
+  ngOnInit(): void {
     //Add User form validations
     this.RegisterForm = this.formBuilder.group({
       username: ['', [Validators.required, Validators.pattern]],
@@ -50,6 +33,21 @@ export class SignUpComponent implements OnInit {
       role: ['', [Validators.required, Validators.pattern]],
       password: ['', [Validators.required]]
     });
+  }
+
+  //Add user form actions
+  get f() { return this.RegisterForm.controls; }
+
+  onSubmit() {
+    this.submitted = true;
+    // stop here if form is invalid
+    if (this.RegisterForm.invalid) {
+      return;
+    }
+    //True if all the fields are filled
+    if (this.submitted) {
+      this.createUser();
+    }
   }
 
   //create new user

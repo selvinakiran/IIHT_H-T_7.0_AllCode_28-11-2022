@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { TokenStorageService } from './token-storage.service';
 
 //const BASE_URL = "http://ec2-44-201-223-149.compute-1.amazonaws.com:5000/api/adminmodule";
 
@@ -13,13 +14,28 @@ const httpOptions = {
   headers: reqHeaders
 };
 
+
+
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class UserService {
 
-  constructor(private http: HttpClient) { }
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.tokenService.getToken()
+    })
+  };
 
+  constructor(
+    private http: HttpClient,
+    private tokenService: TokenStorageService,
+  ) { }
+
+  
   //create new user
   createUser(user: {
     username: string;
@@ -41,4 +57,10 @@ export class UserService {
   }) {
     return this.http.post(BASE_URL + "/sign-in", request, httpOptions);
   }
+
+  getAllUser() {
+    return this.http.get(BASE_URL + "/alluser", this.httpOptions);
+  }
+
+  
 }

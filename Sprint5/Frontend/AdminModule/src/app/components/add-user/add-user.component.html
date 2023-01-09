@@ -95,13 +95,27 @@
                 </div>
 
                 <div class="column">
-                    <label for="isActive">Role</label>
-                    <select formControlName="isActive" [(ngModel)]="user.role" class="form-control form-select">
-                        <option [ngValue]="true">Report-User</option>
-                        <option [ngValue]="false">Compensation-User</option>
-                    </select>
+                  <label for="floatingInput" class="fs-6">Role</label>
+                  <select formControlName="isActive" [(ngModel)]="user.role" type="text"
+                    class="form-control form-select" id="floatingInput" placeholder="Enter role" formControlName="role"
+                    class="form-control" [ngClass]="{ 'is-invalid': submitted && f.role.errors }" id="role">
+                    <option ngValue="REPORT_USER">Report-User</option>
+                    <option ngValue="COMPENSATION_USER">Compensation-User</option>
+                  </select>
+                  <div *ngIf="submitted && f.role.errors" class="invalid-feedback">
+                    <div *ngIf="f.role.errors.required">Role is required</div>
+                    <div *ngIf="f.role.errors.role">Role must be a valid role</div>
+                  </div>
                 </div>
+
+                
             </div>
+
+           
+
+              
+              
+            
   
            
         </div>

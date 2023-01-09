@@ -1,7 +1,11 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import Book from 'src/app/models/book';
-import { BookService } from 'src/app/services/book.service';
+import User from 'src/app/models/user';
+import { UserService } from 'src/app/services/user.service';
+
+import { Pipe, PipeTransform } from "@angular/core";
+import { orderBy } from 'lodash';
+
 
 @Component({
   selector: 'app-view-book',
@@ -9,40 +13,28 @@ import { BookService } from 'src/app/services/book.service';
   styleUrls: ['./view-book.component.css'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class ViewBookComponent implements OnInit {
-  books: Book[] = [];
+  users: User[] ;
 
   constructor(
-    private bookService: BookService,
+    private userService: UserService,
     private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
     //initalize when component starts
-    this.getAllBooks();
+    this.getAllUser();
   }
 
-  deleteBook(book: any, index: any) {
-    const observable = this.bookService.deleteBook(book);
-    observable.subscribe(
-      (res) => {
-        console.log(res);
-        this.books.splice(index, 1);
-        this.successSnackBar("Book deleted successfully!");
-      }, (err) => {
-        this.errorSnackBar("Something went wrong !, Please try again");
-        console.log(err);
-      }
-    )
-  }
-
-  //get all books
-  getAllBooks() {
-    const promise = this.bookService.getAllBooks();
+ 
+  //get all User
+  getAllUser() {
+    const promise = this.userService.getAllUser();
     promise.subscribe(
-      (res) => {
+      (res:any) => {
          
-        this.books = res as Book[];
-        this.successSnackBar("Book loaded successfully!");
+        this.users = res;
+        this.successSnackBar("User loaded successfully!");
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
         console.log(err);
@@ -50,43 +42,14 @@ export class ViewBookComponent implements OnInit {
     );
   }
 
-  //block
-  blockBook(book: any, index: any) {
-    const observable = this.bookService.blockBook(book, false);
-    observable.subscribe(
-      (res) => {
-        // console.log(res);
-        // this.books.splice(index, 1);
-        this.successSnackBar("Book blocked successfully!");
-      }, (err) => {
-        this.errorSnackBar("Something went wrong !, Please try again");
-        console.log(err);
-      }
-    )
-  }
 
-  //block
-  unblockBook(book: any, index: any) {
-    const observable = this.bookService.blockBook(book, true);
-    observable.subscribe(
-      (res) => {
-        // console.log(res);
-        // this.books.splice(index, 1);
-        this.successSnackBar("Book unblocked successfully!");
-      }, (err) => {
-        this.errorSnackBar("Something went wrong !, Please try again");
-        console.log(err);
-      }
-    )
-  }
-
-  //sort book by price
-  sortBooks() {
-    this.books.sort((book1, book2) => {
-      return book1.price - book2.price;
+  // //sort book by name
+ sortUser() {
+     this.users.sort((user1, user2) => {
+       return user1.username - user2.username;
     })
-    this.successSnackBar("Book sorted successfully!");
-  }
+    this.successSnackBar("User sorted successfully!");
+   }
 
   successSnackBar(message: string) {
     this.snackBar.open(message, 'X', {
@@ -98,6 +61,13 @@ export class ViewBookComponent implements OnInit {
     this.snackBar.open(message, 'X', {
       duration: 5000, panelClass: 'snackbar-error'
     });
+  }
+
+  key: string= 'id';
+  reverse: boolean = false;
+  sort(key){
+    this.key = key;
+    this.reverse = !this.reverse;
   }
 
 }

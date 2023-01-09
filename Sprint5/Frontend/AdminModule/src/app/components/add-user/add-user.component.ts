@@ -57,7 +57,7 @@ export class AddUserComponent implements OnInit {
     observables.subscribe(
       (res: any) => {
         // console.log(res);
-        this.successSnackBar("Your account is created successfully!");
+        this.successSnackBar("The User is created successfully!");
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
         console.log(err);

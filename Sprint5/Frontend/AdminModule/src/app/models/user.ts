@@ -1,5 +1,5 @@
 export default class User {
-    username: string = '';
+    username: any;
     firstName: string = '';
     lastName: string = '';
     location: string = '';
