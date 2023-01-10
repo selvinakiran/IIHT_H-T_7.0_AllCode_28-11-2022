@@ -17,11 +17,20 @@
         </li>
         <li class="nav-item fs-6">
           <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page"
-          *ngIf="role === 'ADMIN'" routerLink="view-book">View User</button>
+          *ngIf="role === 'ADMIN'" routerLink="viewuser">View User</button>
         </li>
-        <!-- <li class="nav-item fs-6">
-          <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page" *ngIf="role === 'READER' " routerLink="subscribed-book" >Book Subscribed</button>
-        </li> -->
+        <li class="nav-item fs-6">
+          <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page" 
+          *ngIf="role === 'COMPENSATION_USER' " routerLink="addcompensation" >Add Compensation</button>
+        </li>
+          <li class="nav-item fs-6">
+          <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page"
+           *ngIf="role === 'COMPENSATION_USER' " routerLink="viewcompensation" >View Compensation</button>
+        </li>
+          <li class="nav-item fs-6">
+          <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page"
+           *ngIf="role === 'REPORT_USER' " routerLink="viewreport" >View Report</button>
+        </li>
       </ul>
     </div>
     <div class="d-flex">
@@ -31,8 +40,9 @@
           <li class="nav-item fs-6">
            
               <button class="nav-link active btn btn btn-secondary text-light me-3" aria-current="page"
-              *ngIf="role === 'ADMIN'" routerLink="" (click)="signOut()">Sign Out</button>
-              <!-- *ngIf="role === 'READER' || role === 'AUTHOR'" -->
+              *ngIf="role === 'ADMIN' || role === 'REPORT_USER' || role === 'COMPENSATION_USER'" 
+              routerLink="" (click)="signOut()">Sign Out</button>
+             
           </li>
         </ul>
       </div>

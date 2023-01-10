@@ -17,9 +17,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { AddUserComponent } from './components/add-user/add-user.component';
+import { AddCompensationComponent } from './components/add-compensation/add-compensation.component';
 import { MatCardModule } from '@angular/material/card';
-import { ViewBookComponent } from './components/view-book/view-book.component';
+import { ViewUserComponent } from './components/view-user/view-user.component';
+import { ViewCompensationComponent } from './components/view-compensation/view-compensation.component';
+import { ViewReportComponent } from './components/view-reports/view-reports.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { Ng2OrderModule } from 'ng2-order-pipe';
 
 
 @NgModule({
@@ -32,7 +37,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HeaderComponent,
     FooterComponent,
     AddUserComponent,
-    ViewBookComponent
+    AddCompensationComponent,
+    ViewUserComponent,
+    ViewCompensationComponent,
+    ViewReportComponent
     
    
   ],
@@ -44,7 +52,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HttpClientModule,
     CommonModule,
     MatCardModule,
-    MatSnackBarModule 
+    MatSnackBarModule,
+    NgxPaginationModule,
+    Ng2OrderModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

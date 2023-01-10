@@ -21,7 +21,10 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "bootstrap": "^5.2.3",
+    "ng2-order-pipe": "^0.1.5",
     "ngx": "^2.4.0",
+    "ngx-pagination": "^6.0.3",
+    "ngx-sort": "^1.0.6",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

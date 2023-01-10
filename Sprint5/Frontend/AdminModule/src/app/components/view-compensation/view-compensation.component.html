@@ -11,7 +11,7 @@
             <thead>
                 <tr class="fs-6">
                     <th scope="col">Employee ID</th>
-                    <!-- <th (click)="sort('id')" scope="col">Username id&nbsp; <i class="fa fa-sort"></i></th> -->
+                    <!-- <th (click)="sort('username')" scope="col"> Username&nbsp;<i class ="fa fa-sort"></i></th> -->
                     <th scope="col">Username</th>
                     <th scope="col">Firtname</th>
                     <th scope="col">Lastname</th>
@@ -23,22 +23,27 @@
                   
                 </tr>
             </thead>
-            <tbody *ngFor="let b of users , index as i">
-                <tr class="fs-6">
-                    <th scope="row">{{i+1}}</th>
-                    <td>{{b.username}}</td>
-                    <td>{{b.firstName}}</td>
-                    <td>{{b.lastName}}</td>
-                    <td>{{b.location}}</td>
-                    <td>{{b.jobtitle}}</td>
-                    <td>{{b.department}}</td>
-                    <td>{{b.role}}</td>
+            <tbody >
+                <tr class="fs-6" *ngFor="let user of  users | paginate: {itemsPerPage: 4, currentPage: page};">
+                 
+                    <td>{{user.employeeId}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>{{user.location}}</td>
+                    <td>{{user.jobtitle}}</td>
+                    <td>{{user.department}}</td>
+                    <td>{{user.role}}</td>
                    
                    
                 </tr>
             </tbody>
         </table>
-        <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+       <!-- <div class="text-center">
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+       </div> -->
+
+       
     </div>
 
 </div>

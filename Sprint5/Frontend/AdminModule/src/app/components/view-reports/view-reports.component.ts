@@ -3,19 +3,20 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import User from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 
-import { Pipe, PipeTransform } from "@angular/core";
-import { orderBy } from 'lodash';
 
 
 @Component({
-  selector: 'app-view-book',
-  templateUrl: './view-book.component.html',
-  styleUrls: ['./view-book.component.css'],
+  selector: 'app-view-reports',
+  templateUrl: './view-reports.component.html',
+  styleUrls: ['./view-reports.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 
-export class ViewBookComponent implements OnInit {
-  users: User[] ;
+export class ViewReportComponent implements OnInit {
+  users: User[] = [] ;
+  totalLength : any;
+  page:number=1;
+
 
   constructor(
     private userService: UserService,
@@ -43,13 +44,6 @@ export class ViewBookComponent implements OnInit {
   }
 
 
-  // //sort book by name
- sortUser() {
-     this.users.sort((user1, user2) => {
-       return user1.username - user2.username;
-    })
-    this.successSnackBar("User sorted successfully!");
-   }
 
   successSnackBar(message: string) {
     this.snackBar.open(message, 'X', {
@@ -63,11 +57,13 @@ export class ViewBookComponent implements OnInit {
     });
   }
 
-  key: string= 'id';
+  key: string= 'username';
   reverse: boolean = false;
   sort(key){
     this.key = key;
     this.reverse = !this.reverse;
   }
+
+
 
 }
