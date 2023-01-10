@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import User from 'src/app/models/user';
-import { UserService } from 'src/app/services/user.service';
+import Compensation from 'src/app/models/compensation';
+import { CompensationService } from 'src/app/services/compensation.service';
 
 
 
@@ -13,28 +13,26 @@ import { UserService } from 'src/app/services/user.service';
 })
 
 export class ViewReportComponent implements OnInit {
-  users: User[] = [] ;
-  totalLength : any;
+  compensation: Compensation[] = [] ;
   page:number=1;
 
 
   constructor(
-    private userService: UserService,
+    private compensationService: CompensationService,
     private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
     //initalize when component starts
-    this.getAllUser();
+    this.getAllCompensation();
   }
 
- 
-  //get all User
-  getAllUser() {
-    const promise = this.userService.getAllUser();
+   //get all Compensation
+   getAllCompensation() {
+    const promise = this.compensationService.getAllCompensation();
     promise.subscribe(
       (res:any) => {
          
-        this.users = res;
+        this.compensation = res;
         this.successSnackBar("User loaded successfully!");
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
@@ -57,12 +55,7 @@ export class ViewReportComponent implements OnInit {
     });
   }
 
-  key: string= 'username';
-  reverse: boolean = false;
-  sort(key){
-    this.key = key;
-    this.reverse = !this.reverse;
-  }
+ 
 
 
 

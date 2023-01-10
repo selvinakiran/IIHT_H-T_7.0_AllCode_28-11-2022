@@ -1,14 +1,25 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BookContent, SubscribeDetails } from '../models/book';
 import { TokenStorageService } from './token-storage.service';
 
-const BASE_URL = "http://ec2-44-201-223-149.compute-1.amazonaws.com:5000/api/v1/digitalbooks";
+//const BASE_URL = "http://ec2-44-201-223-149.compute-1.amazonaws.com:5000/api/adminmodule";
+
+const BASE_URL = "http://localhost:5000/api/adminmodule";
+
+const reqHeaders = new HttpHeaders({
+  'Content-Type': 'application/json'
+})
+
+const httpOptions = {
+  headers: reqHeaders
+};
+
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class BookService {
+export class CompensationService {
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -22,58 +33,34 @@ export class BookService {
     private tokenService: TokenStorageService,
   ) { }
 
-  //search book
-  searchBooks(filter: {
-    title: string;
-    category: string;
-    price: number;
-    author: string;
+  
+
+   //create new Compensation
+   createCompensation(Compensation: {
+    planid: number;
+    partnername: string;
+    compensationplan: string ;
+    validto: string ; 
+    validfrom: string ;
+    calculation: string ;
+    
   }) {
-    return this.http.post(BASE_URL + "/search/filter", filter);
+    return this.http.post(BASE_URL + "/add-compensation", Compensation, httpOptions);
   }
 
-  //create new user
-  createBook(book: {
-    logo: any;
-    title: string;
-    description: string;
-    category: string;
-    price: number;
-    author: string;
-    isActive: boolean;
-    publisher: string;
-    publishedDate: any;
-    bookContentDetails: BookContent[];
-  }) {
-    return this.http.post(BASE_URL + "/author/book/add", book, this.httpOptions);
+  getAllCompensation() {
+    return this.http.get(BASE_URL + "/allcompensation", this.httpOptions);
   }
 
-  getAllBooks() {
-    return this.http.get(BASE_URL + "/author/all/" + this.tokenService.getUser().username, this.httpOptions);
+  deleteCompensation(Compensation: any) {
+    return this.http.delete(BASE_URL + "/delete" , this.httpOptions);
   }
 
-  deleteBook(book: any) {
-    return this.http.delete(BASE_URL + "/author/delete/" + book.id, this.httpOptions);
-  }
+  //download excel report
 
-  blockBook(book: any, isActive: boolean) {
-    return this.http.put(BASE_URL + "/author/blk-unblk/" + book.id, isActive, this.httpOptions);
+  downloadreport() {
+    return this.http.get(BASE_URL + "/export/compensations", this.httpOptions);
   }
-
-  subscribeBook(book: any, subDetails: SubscribeDetails) {
-    return this.http.put(BASE_URL + "/reader/subscribe/" + book.id, subDetails, this.httpOptions);
-  }
-
-  unsubscribeBook(book: any, subDetails: SubscribeDetails) {
-    return this.http.put(BASE_URL + "/reader/cancel-subscription/" + book.id, subDetails, this.httpOptions);
-  }
-
-  subscribedBooks(subName: string) {
-    return this.http.get(BASE_URL + "/reader/getalluser/" + subName, this.httpOptions);
-  }
-
-  getAllNotification() {
-    return this.http.get(BASE_URL + "/reader/getallnotify/" + this.tokenService.getUser().username, this.httpOptions);
-  }
+  
 
 }

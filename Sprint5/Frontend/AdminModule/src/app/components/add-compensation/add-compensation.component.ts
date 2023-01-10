@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import User from 'src/app/models/user';
-import { UserService } from 'src/app/services/user.service';
+import Compensation from 'src/app/models/compensation';
+import { CompensationService } from 'src/app/services/compensation.service';
 
 @Component({
   selector: 'app-add-book',
@@ -14,26 +14,24 @@ export class AddCompensationComponent implements OnInit {
   //Form Validables 
   RegisterForm: any = FormGroup;
   submitted = false;
-  user: User = new User();
+  compensation: Compensation = new Compensation();
  
 
   constructor(private formBuilder: FormBuilder,
-    private userService: UserService,
+    private compensationService: CompensationService,
     private snackBar: MatSnackBar
   ) { }
 
   ngOnInit(): void {
     //Add User form validations
     this.RegisterForm = this.formBuilder.group({
-      username: ['', [Validators.required, Validators.pattern]],
-      firstname: ['', [Validators.required, Validators.pattern]],
-      lastname: ['', [Validators.required, Validators.pattern]],
-      location: ['', [Validators.required, Validators.pattern]],
-      jobtitle: ['', [Validators.required, Validators.pattern]],
-      department: ['', [Validators.required, Validators.pattern]],
-      role: ['', [Validators.required, Validators.pattern]],
-      password: ['', [Validators.required]]
-    });
+      planid: ['', [Validators.required, Validators.pattern]],
+      partnername: ['', [Validators.required, Validators.pattern]],
+      compensationplan: ['', [Validators.required, Validators.pattern]],
+      validto: ['', [Validators.required, Validators.pattern]],
+      validfrom: ['', [Validators.required, Validators.pattern]],
+      calculation: ['', [Validators.required, Validators.pattern]]
+   });
   }
 
   //Add user form actions
@@ -47,13 +45,13 @@ export class AddCompensationComponent implements OnInit {
     }
     //True if all the fields are filled
     if (this.submitted) {
-      this.createUser();
+      this.createCompensation();
     }
   }
 
-  //create new user
-  createUser() {
-    const observables = this.userService.createUser(this.user);
+  //create new compensation
+  createCompensation() {
+    const observables = this.compensationService.createCompensation(this.compensation);
     observables.subscribe(
       (res: any) => {
         // console.log(res);
