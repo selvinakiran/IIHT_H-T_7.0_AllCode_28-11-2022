@@ -6,13 +6,7 @@ import { TokenStorageService } from './token-storage.service';
 
 const BASE_URL = "http://localhost:5000/api/adminmodule";
 
-const reqHeaders = new HttpHeaders({
-  'Content-Type': 'application/json'
-})
 
-const httpOptions = {
-  headers: reqHeaders
-};
 
 
 
@@ -36,24 +30,23 @@ export class CompensationService {
   
 
    //create new Compensation
-   createCompensation(Compensation: {
-    planid: number;
+   createCompensation(compensation: {
     partnername: string;
-    compensationplan: string ;
-    validto: string ; 
-    validfrom: string ;
-    calculation: string ;
-    
-  }) {
-    return this.http.post(BASE_URL + "/add-compensation", Compensation, httpOptions);
+    compensationplan: string;
+    validto: string; 
+    validfrom: string;
+    calculation: string;
+    }) {
+    return this.http.post(BASE_URL + "/add-compensation", compensation, this.httpOptions);
   }
+
 
   getAllCompensation() {
     return this.http.get(BASE_URL + "/allcompensation", this.httpOptions);
   }
 
-  deleteCompensation(Compensation: any) {
-    return this.http.delete(BASE_URL + "/delete" , this.httpOptions);
+  deleteplan(compensation: any) {
+    return this.http.delete(BASE_URL + "/comp/delete/" + compensation.planid, this.httpOptions);
   }
 
   //download excel report

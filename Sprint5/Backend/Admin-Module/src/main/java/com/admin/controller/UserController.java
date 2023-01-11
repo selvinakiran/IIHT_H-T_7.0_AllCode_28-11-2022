@@ -93,6 +93,8 @@ public class UserController {
 		return new ResponseEntity<>(compService.getAllCompensation(), HttpStatus.OK);
 	}
 	
+	
+	
 	@CrossOrigin("http://localhost:4200")
 	@GetMapping("/export/compensations")
 	public void exportCompsToExcel(HttpServletResponse response) throws IOException{

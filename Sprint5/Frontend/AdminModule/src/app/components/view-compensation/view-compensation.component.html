@@ -12,9 +12,11 @@
                     <th scope="col">Plan ID</th>
                     <th scope="col">PartnerName</th>
                     <th scope="col">CompensationPlan</th>
-                    <th scope="col">Valid To</th>
                     <th scope="col">Valid From</th>
+                    <th scope="col">Valid To</th>
                     <th scope="col">Calculation Method</th>
+                    <th scope="col">Option</th>
+                    
               
                 </tr>
             </thead>
@@ -24,9 +26,12 @@
                     <td>{{comp.planid}}</td>
                     <td>{{comp.partnername}}</td>
                     <td>{{comp.compensationplan}}</td>
-                    <td>{{comp.validto}}</td>
                     <td>{{comp.validfrom}}</td>
+                    <td>{{comp.validto}}</td>
                     <td>{{comp.calculation}}</td>
+                    <td >
+                     <button type="button" (click)="deleteplan(comp)" class="btn btn-outline-danger">Delete</button>
+                    </td>
                    
                    
                 </tr>

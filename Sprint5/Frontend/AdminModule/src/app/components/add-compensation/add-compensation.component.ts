@@ -5,7 +5,7 @@ import Compensation from 'src/app/models/compensation';
 import { CompensationService } from 'src/app/services/compensation.service';
 
 @Component({
-  selector: 'app-add-book',
+  selector: 'app-add-compensation',
   templateUrl: './add-compensation.component.html',
   styleUrls: ['./add-compensation.component.css'],
   encapsulation: ViewEncapsulation.None
@@ -25,12 +25,11 @@ export class AddCompensationComponent implements OnInit {
   ngOnInit(): void {
     //Add User form validations
     this.RegisterForm = this.formBuilder.group({
-      planid: ['', [Validators.required, Validators.pattern]],
       partnername: ['', [Validators.required, Validators.pattern]],
-      compensationplan: ['', [Validators.required, Validators.pattern]],
-      validto: ['', [Validators.required, Validators.pattern]],
-      validfrom: ['', [Validators.required, Validators.pattern]],
-      calculation: ['', [Validators.required, Validators.pattern]]
+      compensationplan: ['', [Validators.required]],
+      validto: ['', [Validators.required]],
+      validfrom: ['', [Validators.required]],
+      calculation: ['', [Validators.required]]
    });
   }
 
@@ -54,8 +53,8 @@ export class AddCompensationComponent implements OnInit {
     const observables = this.compensationService.createCompensation(this.compensation);
     observables.subscribe(
       (res: any) => {
-        // console.log(res);
-        this.successSnackBar("The User is created successfully!");
+        console.log(res);
+        this.successSnackBar("The compensation is created successfully!");
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
         console.log(err);

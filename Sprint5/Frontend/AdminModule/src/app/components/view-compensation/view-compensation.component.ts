@@ -42,6 +42,20 @@ export class ViewCompensationComponent implements OnInit {
     );
   }
 
+  deleteplan(Compensation: any) {
+    const observable = this.compensationService.deleteplan(Compensation);
+    observable.subscribe(
+      (res) => {
+        console.log(res);
+        this.compensation.splice( 1);
+        this.successSnackBar("Compensation Plan deleted successfully!");
+      }, (err) => {
+        this.errorSnackBar("Something went wrong !, Please try again");
+        console.log(err);
+      }
+    )
+  }
+
 
 
   successSnackBar(message: string) {

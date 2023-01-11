@@ -5,85 +5,77 @@
             <h4 class="fs-5">Compensation Details</h4>
             <div class="row">
                 <div class="column">
-                         <label for="username" class="fs-6">Partner Name</label>
-                        <input [(ngModel)]="compensation.partnername" type="text" class="form-control" placeholder="Enter username"
-                          formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
-                          id="username" pattern="[A-Za-z ]{3,32}">
-                        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-                          <div *ngIf="f.username.errors.required">Username is required</div>
-                          <div *ngIf="f.username.errors.pattern">Username must be a valid username</div>
+                         <label for="partnername" class="fs-6">Partner Name</label>
+                        <input [(ngModel)]="compensation.partnername" type="text" class="form-control" placeholder="Enter partnername"
+                          formControlName="partnername" [ngClass]="{ 'is-invalid': submitted && f.partnername.errors }"
+                          id="partnername" pattern="[A-Za-z ]{3,32}">
+                        <div *ngIf="submitted && f.partnername.errors" class="invalid-feedback">
+                          <div *ngIf="f.partnername.errors.required">partnername is required</div>
+                          <div *ngIf="f.partnername.errors.pattern">partnername must be a valid partnername</div>
                         </div>
-                       
-                      
-
                 </div>
+
                 <div class="column">
                     <label for="floatingInput" class="fs-6">Compensation Plan</label>
-                    <input [(ngModel)]="compensation.compensationplan" type="text" class="form-control" id="floatingInput"
-                    placeholder="Enter firstname" formControlName="firstname" class="form-control"
-                    [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" id="firstname"
-                    pattern="[A-Za-z ]{3,32}">
-                  <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
-                    <div *ngIf="f.firstname.errors.required">Firstname is required</div>
-                    <div *ngIf="f.firstname.errors.pattern">Firstname must be a valid firstname</div>
+                    <select formControlName="compensationplan" [(ngModel)]="compensation.compensationplan" type="text"
+                    class="form-control form-select" id="floatingInput" placeholder="Enter compensationplan" formControlName="compensationplan"
+                    class="form-control" [ngClass]="{ 'is-invalid': submitted && f.compensationplan.errors }" id="compensationplan">
+                    <option ngValue="Straight Salary Compensation">Straight Salary Compensation</option>
+                    <option ngValue="Pure Commission">Pure Commission</option>
+                    <option ngValue="Salary Plus Commission">Salary Plus Commission</option>
+                    <option ngValue="Territory Volume Compensation Plan">Territory Volume Compensation Plan</option>
+                  </select>
+                  <div *ngIf="submitted && f.compensationplan.errors" class="invalid-feedback">
+                    <div *ngIf="f.compensationplan.errors.required">compensationplan is required</div>
+                    <div *ngIf="f.compensationplan.errors.role">compensationplan must be a valid role</div>
                   </div>
-                  
-                </div>
+              </div>
+
                 <div class="column">
-                    <label for="floatingInput" class="fs-6">Valid To</label>
-                    <input [(ngModel)]="compensation.validto" type="text" class="form-control" id="floatingInput"
-                    placeholder="Enter lastname" formControlName="lastname" class="form-control"
-                    [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" id="lastname"
-                    pattern="[A-Za-z ]{3,32}">
-                  <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
-                    <div *ngIf="f.lastname.errors.required">Lastname is required</div>
-                    <div *ngIf="f.lastname.errors.pattern">Lastname must be a valid Lastname</div>
+                  <label for="floatingInput" class="fs-6">Calculation Method</label>
+                  <select formControlName="calculation" [(ngModel)]="compensation.calculation" type="text"
+                    class="form-control form-select" id="floatingInput" placeholder="Enter calculation" formControlName="calculation"
+                    class="form-control" [ngClass]="{ 'is-invalid': submitted && f.calculation.errors }" id="calculation">
+                    <option ngValue="Volume">Volume</option>
+                    <option ngValue="Revenue">Revenue</option>
+                  </select>
+                  <div *ngIf="submitted && f.calculation.errors" class="invalid-feedback">
+                    <div *ngIf="f.calculation.errors.required">calculation is required</div>
+                    <div *ngIf="f.calculation.errors.role">calculation must be a valid role</div>
                   </div>
-                  
                 </div>
+
+
             </div>
             <div class="row">
-                <div class="column">
-                    <label for="floatingInput" class="fs-6">Vaild From</label>
-                    <input [(ngModel)]="compensation.validfrom" type="text" class="form-control" id="floatingInput"
-                    placeholder="Enter location" formControlName="location" class="form-control"
-                    [ngClass]="{ 'is-invalid': submitted && f.location.errors }" id="location"
-                    pattern="[A-Za-z ]{3,32}">
-                  <div *ngIf="submitted && f.location.errors" class="invalid-feedback">
-                    <div *ngIf="f.location.errors.required">location is required</div>
-                    <div *ngIf="f.location.errors.pattern">location must be a valid </div>
-                  </div>
-                 
+              <div class="column">
+                <label for="validfrom">Valid From</label>
+                <br />
+                <input type="date" [(ngModel)]="compensation.validfrom" id="validfrom" class="form-control"
+                    name="validfrom" placeholder="Enter validfrom" formControlName="validfrom"
+                    title="validfrom should contains date only">
+                <div *ngIf="submitted && f.validfrom.errors" class="invalid-feedback">
+                    <div *ngIf="f.validfrom.errors.required">validfrom is required</div>
                 </div>
-                <div class="column">
-                    <label for="floatingInput" class="fs-6">Calculation Method</label>
-                    <select formControlName="isActive" [(ngModel)]="compensation.calculation" type="text"
-                      class="form-control form-select" id="floatingInput" placeholder="Enter role" formControlName="role"
-                      class="form-control" [ngClass]="{ 'is-invalid': submitted && f.role.errors }" id="role">
-                      <option ngValue="REPORT_USER">Report-User</option>
-                      <option ngValue="COMPENSATION_USER">Compensation-User</option>
-                    </select>
-                    <div *ngIf="submitted && f.role.errors" class="invalid-feedback">
-                      <div *ngIf="f.role.errors.required">Role is required</div>
-                      <div *ngIf="f.role.errors.role">Role must be a valid role</div>
-                    </div>
-                  </div>
-               
-
-               
             </div>
-           
-           
 
-              
-              
             
-  
-           
+            <div class="column">
+              <label for="validto">Valid To</label>
+              <br />
+              <input type="date" [(ngModel)]="compensation.validto" id="validto" class="form-control"
+                  name="validto" placeholder="Enter validto" formControlName="validto"
+                  title="validto should contains date only">
+              <div *ngIf="submitted && f.validto.errors" class="invalid-feedback">
+                  <div *ngIf="f.validto.errors.required">validto is required</div>
+              </div>
+          </div>
+
+            </div>
+
         </div>
         <div>
-           
-          
+
                 <div class="pb-3" >
                     <button type="submit">Submit</button>
                 </div> 
