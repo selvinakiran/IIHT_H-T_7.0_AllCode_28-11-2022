@@ -59,7 +59,7 @@ export class UserService {
   }
 
   getAllUser() {
-    return this.http.get(BASE_URL + "/alluser", this.httpOptions);
+    return this.http.get(BASE_URL + "/user", this.httpOptions);
   }
 
   

@@ -17,15 +17,7 @@ public class CompensationServiceImpl implements ICompensationService{
 	@Autowired
 	private CompensationRepository comRepo;
 	
-//	@Autowired
-//	private PasswordEncoder encoder;
 
-
-//	@Override
-//	public Compensation getUserByName(String username) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
 
 	@Override
 	public Compensation createcompensation(Compensation newUser) {
@@ -38,6 +30,16 @@ public class CompensationServiceImpl implements ICompensationService{
 	public List<Compensation> getAllCompensation() {
 		return comRepo.findAll();
 	}
+
+
+
+	@Override
+	public void deleteCompensation(Long id) {
+		comRepo.deleteById(id);
+		
+	}
+	
+	
 
 
 }

@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import Compensation from 'src/app/models/compensation';
 import { CompensationService } from 'src/app/services/compensation.service';
-
+import { saveAs } from 'file-saver';
 
 
 @Component({
@@ -38,6 +38,12 @@ export class ViewReportComponent implements OnInit {
         this.errorSnackBar("Something went wrong !, Please try again");
         console.log(err);
       }
+    );
+  }
+
+  exportreport(filename){
+    this.compensationService.exportreport().subscribe(
+      blob =>saveAs(blob,filename)
     );
   }
 

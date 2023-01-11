@@ -32,6 +32,7 @@ export class ViewCompensationComponent implements OnInit {
     const promise = this.compensationService.getAllCompensation();
     promise.subscribe(
       (res:any) => {
+         console.log(res);
          
         this.compensation = res;
         this.successSnackBar("User loaded successfully!");
@@ -42,16 +43,27 @@ export class ViewCompensationComponent implements OnInit {
     );
   }
 
-  deleteplan(Compensation: any) {
+  deleteplan(Compensation: any, index: any) {
     const observable = this.compensationService.deleteplan(Compensation);
     observable.subscribe(
       (res) => {
         console.log(res);
-        this.compensation.splice( 1);
+        this.compensation.splice(1,index);
         this.successSnackBar("Compensation Plan deleted successfully!");
+        this.getAllCompensation();
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
         console.log(err);
+      }
+    )
+  }
+
+  deleteBook(book: any, index: any) {
+    const observable = this.compensationService.deleteplan(Compensation);
+    observable.subscribe(
+      (res) => {
+        console.log(res);
+        this.compensation.splice(index, 1);
       }
     )
   }

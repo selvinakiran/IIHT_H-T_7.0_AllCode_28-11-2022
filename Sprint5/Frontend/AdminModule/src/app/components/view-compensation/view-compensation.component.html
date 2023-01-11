@@ -21,7 +21,7 @@
                 </tr>
             </thead>
             <tbody >
-                <tr class="fs-6" *ngFor="let comp of compensation | paginate: {itemsPerPage: 4, currentPage: page};">
+                <tr class="fs-6" *ngFor="let comp of compensation | paginate: {itemsPerPage: 4, currentPage: page},index as i">
                  
                     <td>{{comp.planid}}</td>
                     <td>{{comp.partnername}}</td>
@@ -30,7 +30,7 @@
                     <td>{{comp.validto}}</td>
                     <td>{{comp.calculation}}</td>
                     <td >
-                     <button type="button" (click)="deleteplan(comp)" class="btn btn-outline-danger">Delete</button>
+                     <button type="button" (click)="deleteplan(comp,i)" class="btn btn-outline-danger">Delete</button>
                     </td>
                    
                    

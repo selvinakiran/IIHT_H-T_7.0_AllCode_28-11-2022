@@ -1,6 +1,7 @@
 package com.admin.utility;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletOutputStream;
@@ -40,8 +41,11 @@ public class CompensationExcelExporter {
             cell.setCellValue((Integer) value);
         } else if (value instanceof Boolean) {
             cell.setCellValue((Boolean) value);
-        } else {
+        }  else if (value instanceof String) {
             cell.setCellValue((String) value);
+        } 
+        else {
+            cell.setCellValue((Date) value);
         }
         cell.setCellStyle(style);
     }
@@ -56,17 +60,19 @@ public class CompensationExcelExporter {
         style.setFont(font);
         style.setAlignment(HorizontalAlignment.CENTER);
         createCell(row,0,"Compensation details",style);
-        sheet.addMergedRegion(new CellRangeAddress(0,0,0,4));
+        sheet.addMergedRegion(new CellRangeAddress(0,0,0,5));
         font.setFontHeight((short)(10));
         row=sheet.createRow(1);
         font.setBold(true);
         font.setFontHeight(16);
         style.setFont(font);
-        createCell(row,0,"partnername",style);
-        createCell(row,1,"compensationplan",style);
-        createCell(row,2,"validto",style);
-        createCell(row,3,"validfrom",style);
-        createCell(row,4,"calculation",style);
+        createCell(row,0,"planId",style);
+        createCell(row,1,"partnername",style);
+        createCell(row,2,"compensationplan",style);
+        createCell(row,3,"validto",style);
+        createCell(row,4,"validfrom",style);
+        createCell(row,5,"calculation",style);
+       
         
 
     }

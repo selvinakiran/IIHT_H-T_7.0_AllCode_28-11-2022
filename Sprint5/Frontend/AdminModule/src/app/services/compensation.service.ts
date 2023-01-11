@@ -33,26 +33,35 @@ export class CompensationService {
    createCompensation(compensation: {
     partnername: string;
     compensationplan: string;
-    validto: string; 
-    validfrom: string;
+    validto: Date; 
+    validfrom: Date;
     calculation: string;
     }) {
-    return this.http.post(BASE_URL + "/add-compensation", compensation, this.httpOptions);
+      console.log(compensation);
+      
+    return this.http.post(BASE_URL + "/compensation", compensation, this.httpOptions);
   }
 
 
   getAllCompensation() {
-    return this.http.get(BASE_URL + "/allcompensation", this.httpOptions);
+    return this.http.get(BASE_URL + "/compensationvalue", this.httpOptions);
   }
 
   deleteplan(compensation: any) {
-    return this.http.delete(BASE_URL + "/comp/delete/" + compensation.planid, this.httpOptions);
+    return this.http.delete(BASE_URL + "/delete/" + compensation.planid, this.httpOptions);
   }
+
 
   //download excel report
 
-  downloadreport() {
-    return this.http.get(BASE_URL + "/export/compensations", this.httpOptions);
+  public exportreport(){
+
+    return this.http.get(BASE_URL + "/export/compensations", {
+
+      responseType: 'blob'
+
+    });
+
   }
   
 

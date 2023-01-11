@@ -13,7 +13,9 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -74,7 +76,7 @@ public class UserController {
 	
 
 	@CrossOrigin("http://localhost:4200")
-	@GetMapping("/alluser")
+	@GetMapping("/user")
 	public ResponseEntity<List<User>> getAllBooks() {
 		return new ResponseEntity<>(userService.getAllUser(), HttpStatus.OK);
 	}
@@ -82,16 +84,30 @@ public class UserController {
 	//Added compensation Plan 
 	
 	
-	@PostMapping("/add-compensation")
+	@PostMapping("/compensation")
 	public ResponseEntity<?> createcompensation(@RequestBody Compensation user) {
 		return new ResponseEntity<>(compService.createcompensation(user), HttpStatus.OK);
 	}
 	
 	@CrossOrigin("http://localhost:4200")
-	@GetMapping("/allcompensation")
-	public ResponseEntity<List<Compensation>> getAllCompensation() {
-		return new ResponseEntity<>(compService.getAllCompensation(), HttpStatus.OK);
+	@GetMapping("/compensationvalue")
+	public List<Compensation> getAllCompensation() {
+		
+		System.out.println("Compensation" +compService.getAllCompensation());
+		List<Compensation> compvalue = compService.getAllCompensation();
+		return compvalue;
 	}
+	
+	@CrossOrigin("http://localhost:4200")
+	@DeleteMapping("/delete/{id}")
+	public ResponseEntity<Compensation> deleteBook(@PathVariable("id") Long id)
+	{
+	 ResponseEntity<Compensation> responseEntity=new ResponseEntity<>(HttpStatus.OK);
+	compService.deleteCompensation(id);
+	
+	return  responseEntity;
+	}
+	
 	
 	
 	
@@ -103,7 +119,7 @@ public class UserController {
 	    String headerValue = "attachment; fileName=comps_info.xlsx";
 
 	    response.setHeader(headerKey,headerValue);
-	    CompensationExcelExporter excelExporter = new CompensationExcelExporter(this.getAllCompensation().getBody());
+	    CompensationExcelExporter excelExporter = new CompensationExcelExporter(this.getAllCompensation());
 	    excelExporter.export(response);
 	}
 	

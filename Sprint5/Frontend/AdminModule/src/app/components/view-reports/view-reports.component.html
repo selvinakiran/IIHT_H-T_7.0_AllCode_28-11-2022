@@ -2,9 +2,11 @@
     <div class="text-center pt-2">
         <h2 class="fs-5 text-decoration-underline">All Compensation Plan User</h2>
     </div>
+   
     <div class="text-end p-2">
-        <button type="button" (click)="getAllCompensation()" class="btn btn-outline-info">Refresh</button>
+        <button type="button" (click)="exportreport('CompensationPlan.xlsx')" class="btn btn-outline-success">Download Report</button>
     </div>
+    <br>
     <div class="container-fluid tableFixHead">
         <table class="table table-striped align-middle">
             <thead>

@@ -1,6 +1,6 @@
 package com.admin.entity;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +8,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Table(name = "COMPENSAION")
@@ -23,11 +27,17 @@ public class Compensation {
 	@Column(name = "COMPENSATION_PLAN")
 	private String compensationplan;
 	
+	//@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd/MM/yyyy")
+	@Temporal(TemporalType.DATE)
 	@Column(name = "VALID_TO")
-	private LocalDate validto;
+	private Date validto;
 	
+	//@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd/MM/yyyy")
+	@Temporal(TemporalType.DATE)
 	@Column(name = "VALID_FROM")
-	private LocalDate validfrom;
+	private Date validfrom;
 	
 	@Column(name = "CALCULATION_METHOD")
 	private String calculation;
@@ -56,19 +66,19 @@ public class Compensation {
 		this.compensationplan = compensationplan;
 	}
 
-	public LocalDate getValidto() {
+	public Date getValidto() {
 		return validto;
 	}
 
-	public void setValidto(LocalDate validto) {
+	public void setValidto(Date validto) {
 		this.validto = validto;
 	}
 
-	public LocalDate getValidfrom() {
+	public Date getValidfrom() {
 		return validfrom;
 	}
 
-	public void setValidfrom(LocalDate validfrom) {
+	public void setValidfrom(Date validfrom) {
 		this.validfrom = validfrom;
 	}
 

@@ -13,5 +13,7 @@ public interface ICompensationService {
 	public Compensation createcompensation(Compensation newUser);
 
 	public List<Compensation> getAllCompensation();
+	
+	public void deleteCompensation(Long id);
 
 }
