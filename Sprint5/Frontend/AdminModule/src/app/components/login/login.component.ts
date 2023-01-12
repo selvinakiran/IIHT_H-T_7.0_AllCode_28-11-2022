@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
+import { Router, RouterModule } from '@angular/router';
 import { JwtRequest } from 'src/app/models/user';
 import { TokenStorageService } from 'src/app/services/token-storage.service';
 import { UserService } from 'src/app/services/user.service';
@@ -21,6 +22,7 @@ export class LoginComponent implements OnInit {
   errorMessage = '';
 
   constructor(
+    private router: Router,
     private formBuilder: FormBuilder,
     private userService: UserService,
     private tokenStorage: TokenStorageService,
@@ -58,6 +60,7 @@ export class LoginComponent implements OnInit {
     const observables = this.userService.login(this.request);
     observables.subscribe(
       async (res: any) => {
+
         this.tokenStorage.saveToken(res.jwtToken);
         this.tokenStorage.saveUser({
           "username": res.username,
@@ -66,9 +69,11 @@ export class LoginComponent implements OnInit {
 
         this.isLoginFailed = false;
         this.isLoggedIn = true;
-        this.successSnackBar("You are logging. Please wait...");
-        await delay(4000);
-        this.reloadPage();
+        
+       // this.successSnackBar("You are logging. Please wait...");
+        //await delay(4000);
+        this.router.navigate(['/home']);
+        //this.reloadPage();
       }, err => {
         this.errorSnackBar("Something went wrong. Please try again...");
         console.log(err);

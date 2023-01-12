@@ -10,7 +10,8 @@ import { ViewCompensationComponent } from './components/view-compensation/view-c
 import { ViewReportComponent } from './components/view-reports/view-reports.component';
 
 const routes: Routes = [
-  { path: "", component: HomeComponent },
+  { path: "",pathMatch:'full',redirectTo:'home'},
+  { path: "home", component: HomeComponent },
   { path: "login", component: LoginComponent },
   { path: "signup", component: SignUpComponent },
   { path: "adduser", component: AddUserComponent },

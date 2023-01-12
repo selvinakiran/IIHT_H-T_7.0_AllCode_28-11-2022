@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid p-2">
     <div class="blink">
-    <h1 class="fs-5" *ngIf="role === ''"
+    <h1 class="fs-5" *ngIf="!tokenService.isloggedin()"
       style="color:orange; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
       Welcome to Partner Compensation System</h1>
      </div>
@@ -13,23 +13,23 @@
       <ul class="navbar-nav">
         <li class="nav-item fs-6">
          <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page" 
-          *ngIf="role === 'ADMIN'" aria-current="page" routerLink="adduser">Add User</button>
+          *ngIf="roleMatch('ADMIN')" aria-current="page" routerLink="adduser">Add User</button>
         </li>
         <li class="nav-item fs-6">
           <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page"
-          *ngIf="role === 'ADMIN'" routerLink="viewuser">View User</button>
+          *ngIf="roleMatch('ADMIN')" routerLink="viewuser">View User</button>
         </li>
         <li class="nav-item fs-6">
           <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page" 
-          *ngIf="role === 'COMPENSATION_USER' " routerLink="addcompensation" >Add Compensation</button>
+          *ngIf="roleMatch('COMPENSATION_USER')" routerLink="addcompensation" >Add Compensation</button>
         </li>
           <li class="nav-item fs-6">
           <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page"
-           *ngIf="role === 'COMPENSATION_USER' " routerLink="viewcompensation" >View Compensation</button>
+           *ngIf="roleMatch('COMPENSATION_USER')" routerLink="viewcompensation" >View Compensation</button>
         </li>
           <li class="nav-item fs-6">
           <button class="nav-link active btn btn btn-primary text-light me-3" aria-current="page"
-           *ngIf="role === 'REPORT_USER' " routerLink="viewreport" >View Report</button>
+           *ngIf="roleMatch('REPORT_USER')" routerLink="viewreport" >View Report</button>
         </li>
       </ul>
     </div>
@@ -40,7 +40,7 @@
           <li class="nav-item fs-6">
            
               <button class="nav-link active btn btn btn-secondary text-light me-3" aria-current="page"
-              *ngIf="role === 'ADMIN' || role === 'REPORT_USER' || role === 'COMPENSATION_USER'" 
+              *ngIf="tokenService.isloggedin()" 
               routerLink="" (click)="signOut()">Sign Out</button>
              
           </li>

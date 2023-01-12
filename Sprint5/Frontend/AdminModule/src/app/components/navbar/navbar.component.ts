@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   role: string = '';
 
   constructor(
-    private tokenService: TokenStorageService,
+    public tokenService: TokenStorageService,
     private userservice: UserService
   ) { }
 
@@ -28,6 +28,25 @@ export class NavbarComponent implements OnInit {
     this.tokenService.signOut();
     this.role = '';
     
+  }
+  public roleMatch(allowedRole: string): boolean {
+
+    let isMatched = false;
+
+    const userRole: any = this.tokenService.getUser().role;
+
+    if (userRole != null && userRole) {
+
+      if (userRole === allowedRole) {
+
+        isMatched = true;
+
+      }
+
+    }
+
+    return isMatched;
+
   }
 
  

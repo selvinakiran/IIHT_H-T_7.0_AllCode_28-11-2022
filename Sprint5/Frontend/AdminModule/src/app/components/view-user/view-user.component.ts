@@ -35,6 +35,7 @@ export class ViewUserComponent implements OnInit {
       (res:any) => {
          
         this.users = res;
+       // this.reverse=false;
         this.successSnackBar("User loaded successfully!");
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
@@ -57,13 +58,15 @@ export class ViewUserComponent implements OnInit {
     });
   }
 
-  key: string= 'username';
-  reverse: boolean = false;
-  sort(key){
+  
+
+
+  key: string = 'id';
+  reverse: boolean = true;
+  sort(key) {
     this.key = key;
     this.reverse = !this.reverse;
   }
-
 
 
 }
