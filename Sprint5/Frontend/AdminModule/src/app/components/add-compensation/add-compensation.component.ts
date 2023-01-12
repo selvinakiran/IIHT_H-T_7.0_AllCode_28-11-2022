@@ -35,7 +35,7 @@ export class AddCompensationComponent implements OnInit {
 
    });
    this.temp=this.compensation.tranpercentage;
-   console.log(this.temp);
+   console.log(this.compensation.calculation);
    
   }
 

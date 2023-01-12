@@ -36,7 +36,7 @@
                   <select formControlName="calculation" [(ngModel)]="compensation.calculation" type="text"
                     class="form-control form-select" id="floatingInput" placeholder="Enter calculation" formControlName="calculation"
                     class="form-control" [ngClass]="{ 'is-invalid': submitted && f.calculation.errors }" id="calculation">
-                    <option ngValue="Volume">Volume</option>
+                    <option default ngValue="Volume">Volume</option>
                     <option ngValue="Revenue">Revenue</option>
                   </select>
                   
@@ -50,28 +50,28 @@
                   <label for="floatingInput" class="fs-6">Transaction Limit</label>
                 <select formControlName="tranpercentage" [(ngModel)]="compensation.tranpercentage" type="number"
                     class="form-control form-select" id="floatingInput" placeholder="Enter transaction" formControlName="tranpercentage">
-                    <option ngValue="10">10</option>
+                    <option default ngValue="10">10</option>
                     <option ngValue="20">20</option>
-                    <option ngValue="10">30</option>
-                    <option ngValue="20">40</option>
-                    <option ngValue="10">50</option>
+                    <option ngValue="30">30</option>
+                    <option ngValue="40">40</option>
+                    <option ngValue="50">50</option>
                     
                   </select>
                 </div>
                 <div *ngIf="compensation.calculation === 'Revenue'">
-                  <label for="floatingInput" class="fs-6">Transaction Limit value</label>
-                <select formControlName="transaction" [(ngModel)]="compensation.tranpercentage" type="number"
-                    class="form-control form-select" id="floatingInput" placeholder="Enter transaction" formControlName="transaction">
-                    <option ngValue="10">0.1</option>
-                    <option ngValue="20">0.2</option>
-                    <option ngValue="10">0.3</option>
-                    <option ngValue="20">0.4</option>
-                    <option ngValue="10">0.5</option>
+                  <label for="floatingInput" class="fs-6">Transaction Limit</label>
+                <select formControlName="tranpercentage" [(ngModel)]="compensation.tranpercentage" type="number"
+                    class="form-control form-select" id="floatingInput" placeholder="Enter transaction" formControlName="tranpercentage">
+                    <option ngValue="0.1111">0.1</option>
+                    <option ngValue="0.2222">0.2</option>
+                    <option ngValue="0.3333">0.3</option>
+                    <option ngValue="0.4444">0.4</option>
+                    <option ngValue="0.5555">0.5</option>
                   </select>
                 </div>
                 </div>
                 <div class="column">
-                  <div *ngIf="compensation.tranpercentage >= 0">
+                  <div *ngIf="compensation.tranpercentage > 0">
                   <label class="fs-6">Percentage</label>
                   <br>
                   <textarea>{{compensation.tranpercentage}}</textarea>
