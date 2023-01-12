@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TokenStorageService } from 'src/app/services/token-storage.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +12,8 @@ export class NavbarComponent implements OnInit {
   role: string = '';
 
   constructor(
-    private tokenService: TokenStorageService
+    private tokenService: TokenStorageService,
+    private userservice: UserService
   ) { }
 
   ngOnInit(): void {
@@ -27,5 +29,7 @@ export class NavbarComponent implements OnInit {
     this.role = '';
     
   }
+
+ 
 
 }

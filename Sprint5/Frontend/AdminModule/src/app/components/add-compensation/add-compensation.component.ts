@@ -21,17 +21,26 @@ export class AddCompensationComponent implements OnInit {
     private compensationService: CompensationService,
     private snackBar: MatSnackBar
   ) { }
-
+  temp: number;
   ngOnInit(): void {
     //Add User form validations
+    
     this.RegisterForm = this.formBuilder.group({
       partnername: ['', [Validators.required, Validators.pattern]],
       compensationplan: ['', [Validators.required]],
       validto: ['', [Validators.required]],
       validfrom: ['', [Validators.required]],
-      calculation: ['', [Validators.required]]
+      calculation: ['', [Validators.required]],
+      tranpercentage: ['', [Validators.required]],
+
    });
+   this.temp=this.compensation.tranpercentage;
+   console.log(this.temp);
+   
   }
+
+ 
+
 
   //Add user form actions
   get f() { return this.RegisterForm.controls; }

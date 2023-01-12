@@ -11,11 +11,19 @@ export class TokenStorageService {
 
   signOut(): void {
     window.sessionStorage.clear();
+    console.log( window.sessionStorage.length);
+    
+   // window.sessionStorage.length;
   }
 
   public saveToken(token: string): void {
     window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.setItem(TOKEN_KEY, token);
+
+  }
+
+  public isloggedin(){
+    return window.sessionStorage.length>0;
   }
 
   public getToken(): string | null {

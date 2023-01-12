@@ -9,26 +9,28 @@
         <table class="table table-striped align-middle">
             <thead>
                 <tr class="fs-6">
-                    <th scope="col">Plan ID</th>
-                    <th scope="col">PartnerName</th>
+                    <th scope="col" (click)="sort('planid')">Plan ID&nbsp;<i class="fa fa-sort"></i></th>
+                    <th scope="col" (click)="sort('PartnerName')">PartnerName&nbsp;<i class="fa fa-sort"></i></th>
                     <th scope="col">CompensationPlan</th>
                     <th scope="col">Valid From</th>
                     <th scope="col">Valid To</th>
                     <th scope="col">Calculation Method</th>
+                    <th scope="col">Transaction Percentage</th>
                     <th scope="col">Option</th>
                     
               
                 </tr>
             </thead>
             <tbody >
-                <tr class="fs-6" *ngFor="let comp of compensation | paginate: {itemsPerPage: 4, currentPage: page},index as i">
-                 
+                <tr class="fs-6" *ngFor="let comp of compensation | orderBy: key: reverse | paginate: {itemsPerPage: 4, currentPage: page},index as i" >
                     <td>{{comp.planid}}</td>
                     <td>{{comp.partnername}}</td>
                     <td>{{comp.compensationplan}}</td>
                     <td>{{comp.validfrom}}</td>
                     <td>{{comp.validto}}</td>
                     <td>{{comp.calculation}}</td>
+                    <td>{{comp.tranpercentage}}</td>
+
                     <td >
                      <button type="button" (click)="deleteplan(comp,i)" class="btn btn-outline-danger">Delete</button>
                     </td>

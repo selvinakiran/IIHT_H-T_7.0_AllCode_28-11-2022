@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import Compensation from 'src/app/models/compensation';
+import compensation  from 'src/app/models/compensation';
 import { CompensationService } from 'src/app/services/compensation.service';
 
 
@@ -13,8 +13,11 @@ import { CompensationService } from 'src/app/services/compensation.service';
 })
 
 export class ViewCompensationComponent implements OnInit {
-  compensation: Compensation[] = [] ;
+  compensation: compensation[] ;
   page:number=1;
+  //compensation: Compensation = new Compensation();
+
+  
 
 
   constructor(
@@ -35,6 +38,7 @@ export class ViewCompensationComponent implements OnInit {
          console.log(res);
          
         this.compensation = res;
+        this.reverse=false;
         this.successSnackBar("User loaded successfully!");
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
@@ -59,11 +63,11 @@ export class ViewCompensationComponent implements OnInit {
   }
 
   deleteBook(book: any, index: any) {
-    const observable = this.compensationService.deleteplan(Compensation);
+    const observable = this.compensationService.deleteplan(compensation);
     observable.subscribe(
       (res) => {
         console.log(res);
-        this.compensation.splice(index, 1);
+       this.compensation.splice(index, 1);
       }
     )
   }
@@ -82,7 +86,12 @@ export class ViewCompensationComponent implements OnInit {
     });
   }
 
- 
+ key: string = 'planid';
+ reverse: boolean = false;
+ sort(key) {
+   this.key = key;
+   this.reverse = !this.reverse;
+ }
 
 
 

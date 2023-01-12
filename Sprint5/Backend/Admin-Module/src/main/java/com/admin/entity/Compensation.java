@@ -28,19 +28,31 @@ public class Compensation {
 	private String compensationplan;
 	
 	//@DateTimeFormat(pattern = "dd/MM/yyyy")
-	@JsonFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd-MM-yyyy")
 	@Temporal(TemporalType.DATE)
 	@Column(name = "VALID_TO")
 	private Date validto;
 	
 	//@DateTimeFormat(pattern = "dd/MM/yyyy")
-	@JsonFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd-MM-yyyy")
 	@Temporal(TemporalType.DATE)
 	@Column(name = "VALID_FROM")
 	private Date validfrom;
 	
 	@Column(name = "CALCULATION_METHOD")
 	private String calculation;
+	
+	@Column(name = "TRANSACTION_PERCENTAGE")
+	private String tranpercentage;
+	
+
+	public String getTranpercentage() {
+		return tranpercentage;
+	}
+
+	public void setTranpercentage(String tranpercentage) {
+		this.tranpercentage = tranpercentage;
+	}
 
 	public Long getPlanid() {
 		return planid;

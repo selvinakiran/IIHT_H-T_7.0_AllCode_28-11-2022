@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { TokenStorageService } from './token-storage.service';
+import compensation  from 'src/app/models/compensation';
 
 //const BASE_URL = "http://ec2-44-201-223-149.compute-1.amazonaws.com:5000/api/adminmodule";
 
@@ -28,18 +29,12 @@ export class CompensationService {
   ) { }
 
   
-
+    compensationobj = new compensation;
    //create new Compensation
-   createCompensation(compensation: {
-    partnername: string;
-    compensationplan: string;
-    validto: Date; 
-    validfrom: Date;
-    calculation: string;
-    }) {
-      console.log(compensation);
+   createCompensation(compensationobj) {
+      console.log(compensationobj);
       
-    return this.http.post(BASE_URL + "/compensation", compensation, this.httpOptions);
+    return this.http.post(BASE_URL + "/compensation", compensationobj, this.httpOptions);
   }
 
 

@@ -11,8 +11,8 @@
         <table class="table table-striped align-middle">
             <thead>
                 <tr class="fs-6">
-                    <th scope="col">Plan ID</th>
-                    <th scope="col">PartnerName</th>
+                    <th scope="col" (click)="sort('planid')">Plan ID&nbsp;<i class="fa fa-sort"></i></th>
+                    <th scope="col" (click)="sort('PartnerName')">PartnerName&nbsp;<i class="fa fa-sort"></i></th>
                     <th scope="col">CompensationPlan</th>
                     <th scope="col">Valid To</th>
                     <th scope="col">Valid From</th>
@@ -21,7 +21,7 @@
                 </tr>
             </thead>
             <tbody >
-                <tr class="fs-6" *ngFor="let comp of compensation | paginate: {itemsPerPage: 4, currentPage: page};">
+                <tr class="fs-6" *ngFor="let comp of compensation | orderBy: key: reverse | paginate: {itemsPerPage: 4, currentPage: page};">
                  
                     <td>{{comp.planid}}</td>
                     <td>{{comp.partnername}}</td>
