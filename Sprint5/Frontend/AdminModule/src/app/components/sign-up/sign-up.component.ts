@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import User from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 
@@ -18,7 +19,8 @@ export class SignUpComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
     private userService: UserService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private route: Router
   ) { }
 
   ngOnInit(): void {
@@ -57,6 +59,7 @@ export class SignUpComponent implements OnInit {
       (res: any) => {
         // console.log(res);
         this.successSnackBar("Your account is created successfully!");
+        this.route.navigate(['/login']);
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
         console.log(err);

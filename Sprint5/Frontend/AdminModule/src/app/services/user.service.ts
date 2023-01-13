@@ -2,9 +2,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { TokenStorageService } from './token-storage.service';
 
-//const BASE_URL = "http://ec2-44-201-223-149.compute-1.amazonaws.com:5000/api/adminmodule";
+const BASE_URL = "http://ec2-3-86-159-19.compute-1.amazonaws.com:5000/api/adminmodule";
 
-const BASE_URL = "http://localhost:5000/api/adminmodule";
+//const BASE_URL = "http://localhost:5000/api/adminmodule";
 
 const reqHeaders = new HttpHeaders({
   'Content-Type': 'application/json'

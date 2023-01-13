@@ -27,14 +27,14 @@ public class Compensation {
 	@Column(name = "COMPENSATION_PLAN")
 	private String compensationplan;
 	
-	//@DateTimeFormat(pattern = "dd/MM/yyyy")
-	@JsonFormat(pattern = "dd-MM-yyyy")
+	
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)
 	@Column(name = "VALID_TO")
 	private Date validto;
 	
-	//@DateTimeFormat(pattern = "dd/MM/yyyy")
-	@JsonFormat(pattern = "dd-MM-yyyy")
+	
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)
 	@Column(name = "VALID_FROM")
 	private Date validfrom;

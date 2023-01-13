@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import Compensation from 'src/app/models/compensation';
 import { CompensationService } from 'src/app/services/compensation.service';
 
@@ -19,7 +20,8 @@ export class AddCompensationComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
     private compensationService: CompensationService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private route: Router
   ) { }
   temp: number;
   ngOnInit(): void {
@@ -64,6 +66,7 @@ export class AddCompensationComponent implements OnInit {
       (res: any) => {
         console.log(res);
         this.successSnackBar("The compensation is created successfully!");
+        this.route.navigate(['/viewcompensation']);
       }, (err) => {
         this.errorSnackBar("Something went wrong !, Please try again");
         console.log(err);

@@ -1,6 +1,8 @@
 package com.admin.utility;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -60,7 +62,7 @@ public class CompensationExcelExporter {
         style.setFont(font);
         style.setAlignment(HorizontalAlignment.CENTER);
         createCell(row,0,"Compensation details",style);
-        sheet.addMergedRegion(new CellRangeAddress(0,0,0,5));
+        sheet.addMergedRegion(new CellRangeAddress(0,0,0,6));
         font.setFontHeight((short)(10));
         row=sheet.createRow(1);
         font.setBold(true);
@@ -69,9 +71,10 @@ public class CompensationExcelExporter {
         createCell(row,0,"planId",style);
         createCell(row,1,"partnername",style);
         createCell(row,2,"compensationplan",style);
-        createCell(row,3,"validto",style);
-        createCell(row,4,"validfrom",style);
+        createCell(row,3,"validfrom",style);
+        createCell(row,4,"validto",style);
         createCell(row,5,"calculation",style);
+        createCell(row,6,"percentage",style);
        
         
 
@@ -83,15 +86,17 @@ public class CompensationExcelExporter {
         XSSFFont font = workbook.createFont();
         font.setFontHeight(14);
         style.setFont(font);
+        DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
         for(Compensation c : Compensation){
             Row row = sheet.createRow(rowCount++);
             int columnCount=0;
             createCell(row,columnCount++,c.getPlanid(),style);
             createCell(row,columnCount++,c.getPartnername(),style);
             createCell(row,columnCount++,c.getCompensationplan(),style);
-            createCell(row,columnCount++,c.getValidto(),style);
-            createCell(row,columnCount++,c.getValidfrom(),style);
+            createCell(row,columnCount++,dateformat.format(c.getValidfrom()),style);
+            createCell(row,columnCount++,dateformat.format(c.getValidto()),style);
             createCell(row,columnCount++,c.getCalculation(),style);
+            createCell(row,columnCount++,c.getTranpercentage(),style);
          
         }
     }

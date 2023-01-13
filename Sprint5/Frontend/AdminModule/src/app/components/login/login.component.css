@@ -3,7 +3,7 @@
   }
   
   .bg-image {
-    background-image: url('../../../assets/register.png');
+    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fi0.wp.com%2Fcss-tricks.com%2Fwp-content%2Fuploads%2F2018%2F10%2Fsignup-buttons.png%3Ffit%3D1200%252C600%26ssl%3D1&imgrefurl=https%3A%2F%2Fcss-tricks.com%2Fsign-up-vs-signup%2F&tbnid=t26Sh4oXJnWIiM&vet=12ahUKEwis6t6XnMT8AhWri9gFHc2sBfgQMygwegUIARDJAg..i&docid=iEeL2nHfLVReFM&w=1200&h=600&q=sign%20in%20image&ved=2ahUKEwis6t6XnMT8AhWri9gFHc2sBfgQMygwegUIARDJAg');
     background-size: cover;
     background-position: center;
   }

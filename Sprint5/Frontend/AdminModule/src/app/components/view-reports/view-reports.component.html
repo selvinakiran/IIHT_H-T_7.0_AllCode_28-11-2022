@@ -14,9 +14,10 @@
                     <th scope="col" (click)="sort('planid')">Plan ID&nbsp;<i class="fa fa-sort"></i></th>
                     <th scope="col" (click)="sort('PartnerName')">PartnerName&nbsp;<i class="fa fa-sort"></i></th>
                     <th scope="col">CompensationPlan</th>
-                    <th scope="col">Valid To</th>
                     <th scope="col">Valid From</th>
+                    <th scope="col">Valid To</th>
                     <th scope="col">Calculation Method</th>
+                    <th scope="col">Percentage</th>
               
                 </tr>
             </thead>
@@ -26,9 +27,10 @@
                     <td>{{comp.planid}}</td>
                     <td>{{comp.partnername}}</td>
                     <td>{{comp.compensationplan}}</td>
-                    <td>{{comp.validto}}</td>
                     <td>{{comp.validfrom}}</td>
+                    <td>{{comp.validto}}</td>
                     <td>{{comp.calculation}}</td>
+                    <td>{{comp.tranpercentage}} %</td>
                    
                    
                 </tr>

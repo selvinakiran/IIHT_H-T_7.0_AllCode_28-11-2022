@@ -34,8 +34,7 @@ import com.admin.utility.JWTUtility;
 @RestController
 @RequestMapping("/api/adminmodule")
 //@CrossOrigin(origins = "*", allowedHeaders = "*")
-
-@CrossOrigin
+@CrossOrigin("http://localhost:4200")
 public class UserController {
 	
 	@Autowired
@@ -89,7 +88,7 @@ public class UserController {
 		return new ResponseEntity<>(compService.createcompensation(user), HttpStatus.OK);
 	}
 	
-	@CrossOrigin("http://localhost:4200")
+	
 	@GetMapping("/compensationvalue")
 	public List<Compensation> getAllCompensation() {
 		
@@ -98,7 +97,7 @@ public class UserController {
 		return compvalue;
 	}
 	
-	@CrossOrigin("http://localhost:4200")
+	
 	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<Compensation> deleteBook(@PathVariable("id") Long id)
 	{
@@ -111,7 +110,7 @@ public class UserController {
 	
 	
 	
-	@CrossOrigin("http://localhost:4200")
+	
 	@GetMapping("/export/compensations")
 	public void exportCompsToExcel(HttpServletResponse response) throws IOException{
 	    response.setContentType("application/octet-stream");
