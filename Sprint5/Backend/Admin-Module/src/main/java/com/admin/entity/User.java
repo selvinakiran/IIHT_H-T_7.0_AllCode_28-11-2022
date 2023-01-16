@@ -157,6 +157,22 @@ public class User {
 				+ "]";
 	}
 
+
+	public User(Long employeeId, String username, String firstName, String lastName, String password, Role role,
+			LocalDateTime createdTime, String location, String jobtitle, String department) {
+		super();
+		this.employeeId = employeeId;
+		this.username = username;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.password = password;
+		this.role = role;
+		this.createdTime = createdTime;
+		this.location = location;
+		this.jobtitle = jobtitle;
+		this.department = department;
+	}
+
 	
 	
 	

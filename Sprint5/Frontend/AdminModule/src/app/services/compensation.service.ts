@@ -4,7 +4,7 @@ import { TokenStorageService } from './token-storage.service';
 import compensation  from 'src/app/models/compensation';
 
 
-const BASE_URL = "http://ec2-3-86-159-19.compute-1.amazonaws.com:5000/api/adminmodule";
+const BASE_URL = "http://ec2-54-166-57-97.compute-1.amazonaws.com:5000/api/adminmodule";
 
 //const BASE_URL = "http://localhost:5000/api/adminmodule";
 

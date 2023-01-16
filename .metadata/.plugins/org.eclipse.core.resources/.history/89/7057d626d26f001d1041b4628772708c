@@ -1,5 +1,0 @@
-package com.basics.methodreferences;
-
-public interface IWork {
-
-}
