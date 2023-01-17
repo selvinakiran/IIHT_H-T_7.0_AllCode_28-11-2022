@@ -1,21 +1,24 @@
 package com.admin;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.sql.Date;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
+import com.admin.entity.Compensation;
 import com.admin.entity.User;
 import com.admin.models.Role;
+import com.admin.repository.CompensationRepository;
 import com.admin.repository.UserRepository;
+import com.admin.services.ICompensationService;
 import com.admin.services.IUserService;
-import static org.mockito.Mockito.when;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 class UserServiceApplicationTests {
@@ -24,6 +27,11 @@ class UserServiceApplicationTests {
 	private IUserService userservice;
 	@MockBean
 	private UserRepository userrepo;
+	
+	@Autowired
+	private ICompensationService compservice;
+	@MockBean
+	private CompensationRepository comprepo;
 
 	@Test
 	void contextLoads() {
@@ -48,6 +56,41 @@ class UserServiceApplicationTests {
 		
 	}
 	
+	@Test
+	public void signupTest() {
+	User userObj = new User(1L,"selu","Selvina","kiran","selu@2022",Role.ADMIN,LocalDateTime.now(),"chennai","Engineer","IT");
+	when(this.userrepo.save(userObj)).thenReturn(userObj);
+	assertEquals(userObj,userservice.signup(userObj));
+	}
+	
+	@Test
+	public void getUserByNameTest() {
+		User userObj = new User(2L,"selu","Selvina","kiran","selu@2022",Role.ADMIN,LocalDateTime.now(),"chennai","Engineer","IT");
+		String user ="selu";
+		when(this.userrepo.findByUsername(user)).thenReturn(userObj);
+		assertEquals(userObj,userrepo.findByUsername(user));
+	}
+	
+	@Test
+	public void createcompensationTest() {
+	Compensation compObj = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+	when(this.comprepo.save(compObj)).thenReturn(compObj);
+	assertEquals(compObj,compservice.createcompensation(compObj));
+	}
+	
+	
+	@Test
+	public void getAllCompensationTest() {
+	Compensation compObj1 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+	Compensation compObj2 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+	Compensation compObj3 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+	Compensation compObj4 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+		
+	List<Compensation> listofcomp = List.of(compObj1,compObj2,compObj3,compObj4);
+	when(this.comprepo.findAll()).thenReturn(listofcomp);
+	assertEquals(4,compservice.getAllCompensation().size());
+		
+	}
 	
 
 }

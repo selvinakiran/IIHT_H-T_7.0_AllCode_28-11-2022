@@ -113,6 +113,18 @@ public class Compensation {
 				+ compensationplan + ", validto=" + validto + ", validfrom=" + validfrom + ", calculation="
 				+ calculation + "]";
 	}
+
+	public Compensation(Long planid, String partnername, String compensationplan, Date validto, Date validfrom,
+			String calculation, String tranpercentage) {
+		super();
+		this.planid = planid;
+		this.partnername = partnername;
+		this.compensationplan = compensationplan;
+		this.validto = validto;
+		this.validfrom = validfrom;
+		this.calculation = calculation;
+		this.tranpercentage = tranpercentage;
+	}
 	
 	
 	
