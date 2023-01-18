@@ -1,6 +1,8 @@
 package com.admin;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.sql.Date;
@@ -82,13 +84,21 @@ class UserServiceApplicationTests {
 	@Test
 	public void getAllCompensationTest() {
 	Compensation compObj1 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
-	Compensation compObj2 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
-	Compensation compObj3 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
-	Compensation compObj4 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+	Compensation compObj2 = new Compensation(2L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+	Compensation compObj3 = new Compensation(3L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+	Compensation compObj4 = new Compensation(4L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
 		
 	List<Compensation> listofcomp = List.of(compObj1,compObj2,compObj3,compObj4);
 	when(this.comprepo.findAll()).thenReturn(listofcomp);
 	assertEquals(4,compservice.getAllCompensation().size());
+		
+	}
+	
+	@Test
+	public void deletebyIDTest() {
+		Compensation compObj1 = new Compensation(1L,"Harsh","Purecommission",new Date(2022,01,18),new Date(2022,01,19),"volume","20");
+		compservice.deleteCompensation(compObj1.getPlanid());
+		verify(comprepo,times(1)).deleteById(compObj1.getPlanid());
 		
 	}
 	
