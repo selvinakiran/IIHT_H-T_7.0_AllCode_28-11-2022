@@ -1,0 +1,5 @@
+"id";"creation_timestamp";"email";"firstname";"lastname";"password";"role";"username"
+9;"2022-12-22 18:11:34.182124";"selu@gmail.com";"Selvina";"";"$2a$10$mU1Zs1q/PUJ6i8mceaXq8eRY2nv20bgm2t0oaCqZb3cXwXBH.1H1e";"READER";"selu"
+10;"2022-12-25 20:42:25.107816";"robi@gmail.com";"Robinson";"";"$2a$10$wuPpMzvxph5Xalb6lycPk.Piw0Dq3crG5cM6PYCMBPc069xrMy6lC";"READER";"robi"
+11;"2022-12-26 11:05:41.215178";"joni@gmail.com";"Jonita";"kiran";"$2a$10$u4jGf96xvyowR33gJnC.2enYzidylaiTTyP10VYdafXvkUeis51Xu";"AUTHOR";"joni"
+12;"2022-12-26 11:19:17.083934";"riya@gmail.com";"Riya";"Raj";"$2a$10$7Zm8UxOGyrUC4YthWW44luMKrvc/rZSaKagJm/oC8qSPX28LaXrkW";"READER";"riya"
